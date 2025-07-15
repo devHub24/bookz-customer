@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Configuration status="WARN">
+
+    <Properties>
+        <Property name ="LOG_PATTERN">
+            %d{yyy-MM-dd HH:mm:ss.SSS} [%-5p] [%15.15t] [%-40.40c{1.}] : %msg%n%ex
+        </Property>
+        <Property name="APP_NAME">
+            bookz-customer
+        </Property>
+    </Properties>
+
+    <Appenders>
+        <Console name="ConsoleAppender" target = "SYSTEM_OUT">
+            <PatternLayout pattern = "${LOG_PATTERN}"/>
+        </Console>
+
+        <RollingFile name="FileAppender" fileName="logs/${APP_NAME}.log"
+                     filePAttern ="logs/${APP_NAME}-%d{yyyy-MM-dd HH:mm}-%i.log">
+            <PatternLayout pattern="${LOG_PATTERN}"/>
+
+            <Policies>
+                <TimeBasedTriggeringPolicy interval="7"/>
+                <SizeBasedTriggeringPolicy max="10MB"/>
+            </Policies>
+            <DefaultRolloverStrategy max="10" />
+        </RollingFile>
+    </Appenders>
+    <Loggers>
+        <Logger name="org.springframework.boot" level="info" additivity="false">
+            <AppenderRef ref="ConsoleAppender"/>
+        </Logger>
+        <Logger name="com.sk.bookz_customer" level="debug" additivity="false">
+            <AppenderRef ref="FileAppender"/>
+        </Logger>
+        <Root level ="info">
+            <AppenderRef ref="ConsoleAppender"/>
+            <AppenderRef ref="FileAppender"/>
+        </Root>
+    </Loggers>
+</Configuration>

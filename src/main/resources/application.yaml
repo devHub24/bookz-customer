@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: bookz-customer
+  lifecycle:
+    timeout-per-shutdown-phase: 1m
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/bookz-customer
+    username: root
+    password: root
+
+  jpa:
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+    hibernate:
+      ddl-auto: update
+
+server:
+  port: 8282
+  shutdown: graceful
