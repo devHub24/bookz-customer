@@ -27,10 +27,10 @@
         </RollingFile>
     </Appenders>
     <Loggers>
-        <Logger name="org.springframework.boot" level="info">
+        <Logger name="org.springframework.boot" level="info" additivity="false">
             <AppenderRef ref="ConsoleAppender"/>
         </Logger>
-        <Logger name="com.sk.bookz_customer" level="debug">
+        <Logger name="com.sk.bookz_customer" level="debug" additivity="false">
             <AppenderRef ref="FileAppender"/>
         </Logger>
         <Root level ="info">
