@@ -3,7 +3,7 @@
 
     <Properties>
         <Property name ="LOG_PATTERN">
-            %d{yyy-MM-dd HH:mm:ss.SSS} [%-5p] [%15t] [%40c{1.}] : %msg%n%ex
+            %d{yyy-MM-dd HH:mm:ss.SSS} [%-5p] [%15.15t] [%-40.40c{1.}] : %msg%n%ex
         </Property>
         <Property name="APP_NAME">
             bookz-customer
