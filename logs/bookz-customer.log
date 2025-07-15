@@ -1,25 +1,23 @@
-2025-07-15 22:00:36.379 [INFO ] [main           ] [c.s.b.BookzCustomerApplication          ] : Starting BookzCustomerApplication using Java 17.0.15 with PID 71382 (/home/santhosh/foundation/myProjs/bookz/bookz-customer/target/classes started by santhosh in /home/santhosh/foundation/myProjs/bookz/bookz-customer)
-2025-07-15 22:00:36.379 [INFO ] [main           ] [c.s.b.BookzCustomerApplication          ] : Starting BookzCustomerApplication using Java 17.0.15 with PID 71382 (/home/santhosh/foundation/myProjs/bookz/bookz-customer/target/classes started by santhosh in /home/santhosh/foundation/myProjs/bookz/bookz-customer)
-2025-07-15 22:00:36.384 [DEBUG] [main           ] [c.s.b.BookzCustomerApplication          ] : Running with Spring Boot v3.5.3, Spring v6.2.8
-2025-07-15 22:00:36.384 [DEBUG] [main           ] [c.s.b.BookzCustomerApplication          ] : Running with Spring Boot v3.5.3, Spring v6.2.8
-2025-07-15 22:00:36.385 [INFO ] [main           ] [c.s.b.BookzCustomerApplication          ] : No active profile set, falling back to 1 default profile: "default"
-2025-07-15 22:00:36.385 [INFO ] [main           ] [c.s.b.BookzCustomerApplication          ] : No active profile set, falling back to 1 default profile: "default"
-2025-07-15 22:00:36.881 [INFO ] [main           ] [.s.d.r.c.RepositoryConfigurationDelegate] : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-07-15 22:00:36.911 [INFO ] [main           ] [.s.d.r.c.RepositoryConfigurationDelegate] : Finished Spring Data repository scanning in 23 ms. Found 1 JPA repository interface.
-2025-07-15 22:00:37.160 [INFO ] [main           ] [o.s.b.w.e.t.TomcatWebServer             ] : Tomcat initialized with port 8282 (http)
-2025-07-15 22:00:37.168 [INFO ] [main           ] [o.a.c.h.Http11NioProtocol               ] : Initializing ProtocolHandler ["http-nio-8282"]
-2025-07-15 22:00:37.169 [INFO ] [main           ] [o.a.c.c.StandardService                 ] : Starting service [Tomcat]
-2025-07-15 22:00:37.169 [INFO ] [main           ] [o.a.c.c.StandardEngine                  ] : Starting Servlet engine: [Apache Tomcat/10.1.42]
-2025-07-15 22:00:37.195 [INFO ] [main           ] [o.a.c.c.C.[.[.[/]                       ] : Initializing Spring embedded WebApplicationContext
-2025-07-15 22:00:37.195 [INFO ] [main           ] [w.s.c.ServletWebServerApplicationContext] : Root WebApplicationContext: initialization completed in 782 ms
-2025-07-15 22:00:37.369 [INFO ] [main           ] [o.h.j.i.u.LogHelper                     ] : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-07-15 22:00:37.400 [INFO ] [main           ] [o.h.Version                             ] : HHH000412: Hibernate ORM core version 6.6.18.Final
-2025-07-15 22:00:37.418 [INFO ] [main           ] [o.h.c.i.RegionFactoryInitiator          ] : HHH000026: Second-level cache disabled
-2025-07-15 22:00:37.563 [INFO ] [main           ] [o.s.o.j.p.SpringPersistenceUnitInfo     ] : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-07-15 22:00:37.583 [INFO ] [main           ] [c.z.h.HikariDataSource                  ] : HikariPool-1 - Starting...
-2025-07-15 22:00:37.673 [INFO ] [main           ] [c.z.h.p.HikariPool                      ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@7cec3975
-2025-07-15 22:00:37.674 [INFO ] [main           ] [c.z.h.HikariDataSource                  ] : HikariPool-1 - Start completed.
-2025-07-15 22:00:37.716 [INFO ] [main           ] [o.h.o.c.pooling                         ] : HHH10001005: Database info:
+2025-07-15 23:29:05.507 [INFO ] [ionShutdownHook] [j.LocalContainerEntityManagerFactoryBean] : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-07-15 23:29:05.510 [INFO ] [ionShutdownHook] [c.z.h.HikariDataSource                  ] : HikariPool-1 - Shutdown initiated...
+2025-07-15 23:29:05.513 [INFO ] [ionShutdownHook] [c.z.h.HikariDataSource                  ] : HikariPool-1 - Shutdown completed.
+2025-07-15 23:30:58.844 [INFO ] [           main] [c.s.b.BookzCustomerApplication          ] : Starting BookzCustomerApplication using Java 17.0.15 with PID 104622 (/home/santhosh/foundation/myProjs/bookz/bookz-customer/target/classes started by santhosh in /home/santhosh/foundation/myProjs/bookz/bookz-customer)
+2025-07-15 23:30:58.850 [DEBUG] [           main] [c.s.b.BookzCustomerApplication          ] : Running with Spring Boot v3.5.3, Spring v6.2.8
+2025-07-15 23:30:58.851 [INFO ] [           main] [c.s.b.BookzCustomerApplication          ] : No active profile set, falling back to 1 default profile: "default"
+2025-07-15 23:30:59.386 [INFO ] [           main] [.s.d.r.c.RepositoryConfigurationDelegate] : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-07-15 23:30:59.420 [INFO ] [           main] [.s.d.r.c.RepositoryConfigurationDelegate] : Finished Spring Data repository scanning in 27 ms. Found 1 JPA repository interface.
+2025-07-15 23:30:59.752 [INFO ] [           main] [o.a.c.h.Http11NioProtocol               ] : Initializing ProtocolHandler ["http-nio-8282"]
+2025-07-15 23:30:59.753 [INFO ] [           main] [o.a.c.c.StandardService                 ] : Starting service [Tomcat]
+2025-07-15 23:30:59.753 [INFO ] [           main] [o.a.c.c.StandardEngine                  ] : Starting Servlet engine: [Apache Tomcat/10.1.42]
+2025-07-15 23:30:59.782 [INFO ] [           main] [o.a.c.c.C.[.[.[/]                       ] : Initializing Spring embedded WebApplicationContext
+2025-07-15 23:30:59.943 [INFO ] [           main] [o.h.j.i.u.LogHelper                     ] : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-07-15 23:30:59.977 [INFO ] [           main] [o.h.Version                             ] : HHH000412: Hibernate ORM core version 6.6.18.Final
+2025-07-15 23:31:00.001 [INFO ] [           main] [o.h.c.i.RegionFactoryInitiator          ] : HHH000026: Second-level cache disabled
+2025-07-15 23:31:00.172 [INFO ] [           main] [o.s.o.j.p.SpringPersistenceUnitInfo     ] : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-07-15 23:31:00.194 [INFO ] [           main] [c.z.h.HikariDataSource                  ] : HikariPool-1 - Starting...
+2025-07-15 23:31:00.289 [INFO ] [           main] [c.z.h.p.HikariPool                      ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@2a20da9f
+2025-07-15 23:31:00.290 [INFO ] [           main] [c.z.h.HikariDataSource                  ] : HikariPool-1 - Start completed.
+2025-07-15 23:31:00.335 [INFO ] [           main] [o.h.o.c.pooling                         ] : HHH10001005: Database info:
 	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
 	Database driver: undefined/unknown
 	Database version: 17.5
@@ -27,44 +25,36 @@
 	Isolation level: undefined/unknown
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-2025-07-15 22:00:38.170 [INFO ] [main           ] [o.h.e.t.j.p.i.JtaPlatformInitiator      ] : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-07-15 22:00:38.201 [INFO ] [main           ] [j.LocalContainerEntityManagerFactoryBean] : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-07-15 22:00:38.319 [WARN ] [main           ] [JpaBaseConfiguration$JpaWebConfiguration] : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-07-15 22:00:38.596 [INFO ] [main           ] [o.s.b.a.e.w.EndpointLinksResolver       ] : Exposing 1 endpoint beneath base path '/actuator'
-2025-07-15 22:00:38.633 [INFO ] [main           ] [o.a.c.h.Http11NioProtocol               ] : Starting ProtocolHandler ["http-nio-8282"]
-2025-07-15 22:00:38.641 [INFO ] [main           ] [o.s.b.w.e.t.TomcatWebServer             ] : Tomcat started on port 8282 (http) with context path '/'
-2025-07-15 22:00:38.652 [INFO ] [main           ] [c.s.b.BookzCustomerApplication          ] : Started BookzCustomerApplication in 2.675 seconds (process running for 3.31)
-2025-07-15 22:00:38.652 [INFO ] [main           ] [c.s.b.BookzCustomerApplication          ] : Started BookzCustomerApplication in 2.675 seconds (process running for 3.31)
-2025-07-15 22:00:38.830 [INFO ] [on(4)-127.0.0.1] [o.a.c.c.C.[.[.[/]                       ] : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-07-15 22:00:38.830 [INFO ] [on(4)-127.0.0.1] [o.s.w.s.DispatcherServlet               ] : Initializing Servlet 'dispatcherServlet'
-2025-07-15 22:00:38.833 [INFO ] [on(4)-127.0.0.1] [o.s.w.s.DispatcherServlet               ] : Completed initialization in 2 ms
-2025-07-15 22:00:58.805 [INFO ] [ionShutdownHook] [o.s.b.w.e.t.GracefulShutdown            ] : Commencing graceful shutdown. Waiting for active requests to complete
-2025-07-15 22:00:58.810 [INFO ] [tomcat-shutdown] [o.s.b.w.e.t.GracefulShutdown            ] : Graceful shutdown complete
-2025-07-15 22:00:58.817 [INFO ] [ionShutdownHook] [j.LocalContainerEntityManagerFactoryBean] : Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-07-15 22:00:58.819 [INFO ] [ionShutdownHook] [c.z.h.HikariDataSource                  ] : HikariPool-1 - Shutdown initiated...
-2025-07-15 22:00:58.822 [INFO ] [ionShutdownHook] [c.z.h.HikariDataSource                  ] : HikariPool-1 - Shutdown completed.
-2025-07-15 22:01:51.513 [INFO ] [main           ] [c.s.b.BookzCustomerApplication          ] : Starting BookzCustomerApplication using Java 17.0.15 with PID 72228 (/home/santhosh/foundation/myProjs/bookz/bookz-customer/target/classes started by santhosh in /home/santhosh/foundation/myProjs/bookz/bookz-customer)
-2025-07-15 22:01:51.513 [INFO ] [main           ] [c.s.b.BookzCustomerApplication          ] : Starting BookzCustomerApplication using Java 17.0.15 with PID 72228 (/home/santhosh/foundation/myProjs/bookz/bookz-customer/target/classes started by santhosh in /home/santhosh/foundation/myProjs/bookz/bookz-customer)
-2025-07-15 22:01:51.517 [DEBUG] [main           ] [c.s.b.BookzCustomerApplication          ] : Running with Spring Boot v3.5.3, Spring v6.2.8
-2025-07-15 22:01:51.517 [DEBUG] [main           ] [c.s.b.BookzCustomerApplication          ] : Running with Spring Boot v3.5.3, Spring v6.2.8
-2025-07-15 22:01:51.518 [INFO ] [main           ] [c.s.b.BookzCustomerApplication          ] : No active profile set, falling back to 1 default profile: "default"
-2025-07-15 22:01:51.518 [INFO ] [main           ] [c.s.b.BookzCustomerApplication          ] : No active profile set, falling back to 1 default profile: "default"
-2025-07-15 22:01:52.007 [INFO ] [main           ] [.s.d.r.c.RepositoryConfigurationDelegate] : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-07-15 22:01:52.037 [INFO ] [main           ] [.s.d.r.c.RepositoryConfigurationDelegate] : Finished Spring Data repository scanning in 24 ms. Found 1 JPA repository interface.
-2025-07-15 22:01:52.296 [INFO ] [main           ] [o.s.b.w.e.t.TomcatWebServer             ] : Tomcat initialized with port 8282 (http)
-2025-07-15 22:01:52.303 [INFO ] [main           ] [o.a.c.h.Http11NioProtocol               ] : Initializing ProtocolHandler ["http-nio-8282"]
-2025-07-15 22:01:52.304 [INFO ] [main           ] [o.a.c.c.StandardService                 ] : Starting service [Tomcat]
-2025-07-15 22:01:52.304 [INFO ] [main           ] [o.a.c.c.StandardEngine                  ] : Starting Servlet engine: [Apache Tomcat/10.1.42]
-2025-07-15 22:01:52.329 [INFO ] [main           ] [o.a.c.c.C.[.[.[/]                       ] : Initializing Spring embedded WebApplicationContext
-2025-07-15 22:01:52.330 [INFO ] [main           ] [w.s.c.ServletWebServerApplicationContext] : Root WebApplicationContext: initialization completed in 785 ms
-2025-07-15 22:01:52.480 [INFO ] [main           ] [o.h.j.i.u.LogHelper                     ] : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-07-15 22:01:52.509 [INFO ] [main           ] [o.h.Version                             ] : HHH000412: Hibernate ORM core version 6.6.18.Final
-2025-07-15 22:01:52.530 [INFO ] [main           ] [o.h.c.i.RegionFactoryInitiator          ] : HHH000026: Second-level cache disabled
-2025-07-15 22:01:52.682 [INFO ] [main           ] [o.s.o.j.p.SpringPersistenceUnitInfo     ] : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-07-15 22:01:52.701 [INFO ] [main           ] [c.z.h.HikariDataSource                  ] : HikariPool-1 - Starting...
-2025-07-15 22:01:52.791 [INFO ] [main           ] [c.z.h.p.HikariPool                      ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@30b9728f
-2025-07-15 22:01:52.792 [INFO ] [main           ] [c.z.h.HikariDataSource                  ] : HikariPool-1 - Start completed.
-2025-07-15 22:01:52.834 [INFO ] [main           ] [o.h.o.c.pooling                         ] : HHH10001005: Database info:
+2025-07-15 23:31:00.868 [INFO ] [           main] [o.h.e.t.j.p.i.JtaPlatformInitiator      ] : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-07-15 23:31:00.900 [INFO ] [           main] [j.LocalContainerEntityManagerFactoryBean] : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-07-15 23:31:01.415 [INFO ] [           main] [o.a.c.h.Http11NioProtocol               ] : Starting ProtocolHandler ["http-nio-8282"]
+2025-07-15 23:31:01.440 [INFO ] [           main] [c.s.b.BookzCustomerApplication          ] : Started BookzCustomerApplication in 2.917 seconds (process running for 3.605)
+2025-07-15 23:31:01.734 [INFO ] [on(1)-127.0.0.1] [o.a.c.c.C.[.[.[/]                       ] : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-07-15 23:31:01.735 [INFO ] [on(1)-127.0.0.1] [o.s.w.s.DispatcherServlet               ] : Initializing Servlet 'dispatcherServlet'
+2025-07-15 23:31:01.737 [INFO ] [on(1)-127.0.0.1] [o.s.w.s.DispatcherServlet               ] : Completed initialization in 2 ms
+2025-07-15 23:31:04.828 [INFO ] [nio-8282-exec-2] [c.s.b.u.DateFormatUtils                 ] : dateString:2000/05/26 and the format: Value(MonthOfYear,2)'-'Value(DayOfMonth,2)'-'Value(YearOfEra,4,19,EXCEEDS_PAD)
+2025-07-15 23:31:04.830 [ERROR] [nio-8282-exec-2] [c.s.b.u.DateFormatUtils                 ] : Exception while parsing the date: Text '2000/05/26' could not be parsed at index 2
+2025-07-15 23:31:04.834 [WARN ] [nio-8282-exec-2] [.w.s.m.s.DefaultHandlerExceptionResolver] : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Text '2000/05/26' could not be parsed at index 2]
+2025-07-15 23:34:15.204 [INFO ] [ionShutdownHook] [j.LocalContainerEntityManagerFactoryBean] : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-07-15 23:34:15.206 [INFO ] [ionShutdownHook] [c.z.h.HikariDataSource                  ] : HikariPool-1 - Shutdown initiated...
+2025-07-15 23:34:15.209 [INFO ] [ionShutdownHook] [c.z.h.HikariDataSource                  ] : HikariPool-1 - Shutdown completed.
+2025-07-15 23:34:17.744 [INFO ] [           main] [c.s.b.BookzCustomerApplication          ] : Starting BookzCustomerApplication using Java 17.0.15 with PID 105967 (/home/santhosh/foundation/myProjs/bookz/bookz-customer/target/classes started by santhosh in /home/santhosh/foundation/myProjs/bookz/bookz-customer)
+2025-07-15 23:34:17.749 [DEBUG] [           main] [c.s.b.BookzCustomerApplication          ] : Running with Spring Boot v3.5.3, Spring v6.2.8
+2025-07-15 23:34:17.750 [INFO ] [           main] [c.s.b.BookzCustomerApplication          ] : No active profile set, falling back to 1 default profile: "default"
+2025-07-15 23:34:18.335 [INFO ] [           main] [.s.d.r.c.RepositoryConfigurationDelegate] : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-07-15 23:34:18.371 [INFO ] [           main] [.s.d.r.c.RepositoryConfigurationDelegate] : Finished Spring Data repository scanning in 28 ms. Found 1 JPA repository interface.
+2025-07-15 23:34:18.699 [INFO ] [           main] [o.a.c.h.Http11NioProtocol               ] : Initializing ProtocolHandler ["http-nio-8282"]
+2025-07-15 23:34:18.700 [INFO ] [           main] [o.a.c.c.StandardService                 ] : Starting service [Tomcat]
+2025-07-15 23:34:18.701 [INFO ] [           main] [o.a.c.c.StandardEngine                  ] : Starting Servlet engine: [Apache Tomcat/10.1.42]
+2025-07-15 23:34:18.733 [INFO ] [           main] [o.a.c.c.C.[.[.[/]                       ] : Initializing Spring embedded WebApplicationContext
+2025-07-15 23:34:18.925 [INFO ] [           main] [o.h.j.i.u.LogHelper                     ] : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-07-15 23:34:18.960 [INFO ] [           main] [o.h.Version                             ] : HHH000412: Hibernate ORM core version 6.6.18.Final
+2025-07-15 23:34:18.984 [INFO ] [           main] [o.h.c.i.RegionFactoryInitiator          ] : HHH000026: Second-level cache disabled
+2025-07-15 23:34:19.169 [INFO ] [           main] [o.s.o.j.p.SpringPersistenceUnitInfo     ] : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-07-15 23:34:19.193 [INFO ] [           main] [c.z.h.HikariDataSource                  ] : HikariPool-1 - Starting...
+2025-07-15 23:34:19.293 [INFO ] [           main] [c.z.h.p.HikariPool                      ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@50ef2906
+2025-07-15 23:34:19.294 [INFO ] [           main] [c.z.h.HikariDataSource                  ] : HikariPool-1 - Start completed.
+2025-07-15 23:34:19.342 [INFO ] [           main] [o.h.o.c.pooling                         ] : HHH10001005: Database info:
 	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
 	Database driver: undefined/unknown
 	Database version: 17.5
@@ -72,156 +62,22 @@
 	Isolation level: undefined/unknown
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-2025-07-15 22:01:53.273 [INFO ] [main           ] [o.h.e.t.j.p.i.JtaPlatformInitiator      ] : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-07-15 22:01:53.304 [INFO ] [main           ] [j.LocalContainerEntityManagerFactoryBean] : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-07-15 22:01:53.419 [WARN ] [main           ] [JpaBaseConfiguration$JpaWebConfiguration] : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-07-15 22:01:53.696 [INFO ] [main           ] [o.s.b.a.e.w.EndpointLinksResolver       ] : Exposing 1 endpoint beneath base path '/actuator'
-2025-07-15 22:01:53.734 [INFO ] [main           ] [o.a.c.h.Http11NioProtocol               ] : Starting ProtocolHandler ["http-nio-8282"]
-2025-07-15 22:01:53.743 [INFO ] [main           ] [o.s.b.w.e.t.TomcatWebServer             ] : Tomcat started on port 8282 (http) with context path '/'
-2025-07-15 22:01:53.753 [INFO ] [main           ] [c.s.b.BookzCustomerApplication          ] : Started BookzCustomerApplication in 2.522 seconds (process running for 2.958)
-2025-07-15 22:01:53.753 [INFO ] [main           ] [c.s.b.BookzCustomerApplication          ] : Started BookzCustomerApplication in 2.522 seconds (process running for 2.958)
-2025-07-15 22:01:53.976 [INFO ] [on(4)-127.0.0.1] [o.a.c.c.C.[.[.[/]                       ] : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-07-15 22:01:53.977 [INFO ] [on(4)-127.0.0.1] [o.s.w.s.DispatcherServlet               ] : Initializing Servlet 'dispatcherServlet'
-2025-07-15 22:01:53.979 [INFO ] [on(4)-127.0.0.1] [o.s.w.s.DispatcherServlet               ] : Completed initialization in 2 ms
-2025-07-15 22:02:28.106 [INFO ] [nio-8282-exec-1] [c.s.b.s.CustomerServiceImp              ] : New customer saved successfully:Customer(id=7, name=user3, email=user3@gmail.com, password=$2a$10$Zcib1zHS1VqzKSEg8RX5M.B1H1hBxkAepIBda3VUt.SZcOKX3pnhu, number=3333333333, dateOfBirth=2000-04-26, customerStatus=ACTIVE)
-2025-07-15 22:02:28.106 [INFO ] [nio-8282-exec-1] [c.s.b.s.CustomerServiceImp              ] : New customer saved successfully:Customer(id=7, name=user3, email=user3@gmail.com, password=$2a$10$Zcib1zHS1VqzKSEg8RX5M.B1H1hBxkAepIBda3VUt.SZcOKX3pnhu, number=3333333333, dateOfBirth=2000-04-26, customerStatus=ACTIVE)
-2025-07-15 22:03:25.727 [INFO ] [ionShutdownHook] [o.s.b.w.e.t.GracefulShutdown            ] : Commencing graceful shutdown. Waiting for active requests to complete
-2025-07-15 22:03:25.730 [INFO ] [tomcat-shutdown] [o.s.b.w.e.t.GracefulShutdown            ] : Graceful shutdown complete
-2025-07-15 22:03:25.736 [INFO ] [ionShutdownHook] [j.LocalContainerEntityManagerFactoryBean] : Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-07-15 22:03:25.738 [INFO ] [ionShutdownHook] [c.z.h.HikariDataSource                  ] : HikariPool-1 - Shutdown initiated...
-2025-07-15 22:03:25.740 [INFO ] [ionShutdownHook] [c.z.h.HikariDataSource                  ] : HikariPool-1 - Shutdown completed.
-2025-07-15 22:03:27.527 [INFO ] [           main] [c.s.b.BookzCustomerApplication          ] : Starting BookzCustomerApplication using Java 17.0.15 with PID 72845 (/home/santhosh/foundation/myProjs/bookz/bookz-customer/target/classes started by santhosh in /home/santhosh/foundation/myProjs/bookz/bookz-customer)
-2025-07-15 22:03:27.527 [INFO ] [           main] [c.s.b.BookzCustomerApplication          ] : Starting BookzCustomerApplication using Java 17.0.15 with PID 72845 (/home/santhosh/foundation/myProjs/bookz/bookz-customer/target/classes started by santhosh in /home/santhosh/foundation/myProjs/bookz/bookz-customer)
-2025-07-15 22:03:27.531 [DEBUG] [           main] [c.s.b.BookzCustomerApplication          ] : Running with Spring Boot v3.5.3, Spring v6.2.8
-2025-07-15 22:03:27.531 [DEBUG] [           main] [c.s.b.BookzCustomerApplication          ] : Running with Spring Boot v3.5.3, Spring v6.2.8
-2025-07-15 22:03:27.531 [INFO ] [           main] [c.s.b.BookzCustomerApplication          ] : No active profile set, falling back to 1 default profile: "default"
-2025-07-15 22:03:27.531 [INFO ] [           main] [c.s.b.BookzCustomerApplication          ] : No active profile set, falling back to 1 default profile: "default"
-2025-07-15 22:03:28.025 [INFO ] [           main] [.s.d.r.c.RepositoryConfigurationDelegate] : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-07-15 22:03:28.054 [INFO ] [           main] [.s.d.r.c.RepositoryConfigurationDelegate] : Finished Spring Data repository scanning in 23 ms. Found 1 JPA repository interface.
-2025-07-15 22:03:28.309 [INFO ] [           main] [o.s.b.w.e.t.TomcatWebServer             ] : Tomcat initialized with port 8282 (http)
-2025-07-15 22:03:28.316 [INFO ] [           main] [o.a.c.h.Http11NioProtocol               ] : Initializing ProtocolHandler ["http-nio-8282"]
-2025-07-15 22:03:28.318 [INFO ] [           main] [o.a.c.c.StandardService                 ] : Starting service [Tomcat]
-2025-07-15 22:03:28.318 [INFO ] [           main] [o.a.c.c.StandardEngine                  ] : Starting Servlet engine: [Apache Tomcat/10.1.42]
-2025-07-15 22:03:28.343 [INFO ] [           main] [o.a.c.c.C.[.[.[/]                       ] : Initializing Spring embedded WebApplicationContext
-2025-07-15 22:03:28.344 [INFO ] [           main] [w.s.c.ServletWebServerApplicationContext] : Root WebApplicationContext: initialization completed in 784 ms
-2025-07-15 22:03:28.494 [INFO ] [           main] [o.h.j.i.u.LogHelper                     ] : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-07-15 22:03:28.522 [INFO ] [           main] [o.h.Version                             ] : HHH000412: Hibernate ORM core version 6.6.18.Final
-2025-07-15 22:03:28.542 [INFO ] [           main] [o.h.c.i.RegionFactoryInitiator          ] : HHH000026: Second-level cache disabled
-2025-07-15 22:03:28.681 [INFO ] [           main] [o.s.o.j.p.SpringPersistenceUnitInfo     ] : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-07-15 22:03:28.700 [INFO ] [           main] [c.z.h.HikariDataSource                  ] : HikariPool-1 - Starting...
-2025-07-15 22:03:28.786 [INFO ] [           main] [c.z.h.p.HikariPool                      ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@1c98fe6f
-2025-07-15 22:03:28.788 [INFO ] [           main] [c.z.h.HikariDataSource                  ] : HikariPool-1 - Start completed.
-2025-07-15 22:03:28.831 [INFO ] [           main] [o.h.o.c.pooling                         ] : HHH10001005: Database info:
-	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
-	Database driver: undefined/unknown
-	Database version: 17.5
-	Autocommit mode: undefined/unknown
-	Isolation level: undefined/unknown
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-2025-07-15 22:03:29.292 [INFO ] [           main] [o.h.e.t.j.p.i.JtaPlatformInitiator      ] : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-07-15 22:03:29.322 [INFO ] [           main] [j.LocalContainerEntityManagerFactoryBean] : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-07-15 22:03:29.438 [WARN ] [           main] [JpaBaseConfiguration$JpaWebConfiguration] : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-07-15 22:03:29.713 [INFO ] [           main] [o.s.b.a.e.w.EndpointLinksResolver       ] : Exposing 1 endpoint beneath base path '/actuator'
-2025-07-15 22:03:29.752 [INFO ] [           main] [o.a.c.h.Http11NioProtocol               ] : Starting ProtocolHandler ["http-nio-8282"]
-2025-07-15 22:03:29.760 [INFO ] [           main] [o.s.b.w.e.t.TomcatWebServer             ] : Tomcat started on port 8282 (http) with context path '/'
-2025-07-15 22:03:29.770 [INFO ] [           main] [c.s.b.BookzCustomerApplication          ] : Started BookzCustomerApplication in 2.528 seconds (process running for 3.067)
-2025-07-15 22:03:29.770 [INFO ] [           main] [c.s.b.BookzCustomerApplication          ] : Started BookzCustomerApplication in 2.528 seconds (process running for 3.067)
-2025-07-15 22:03:30.247 [INFO ] [on(4)-127.0.0.1] [o.a.c.c.C.[.[.[/]                       ] : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-07-15 22:03:30.248 [INFO ] [on(4)-127.0.0.1] [o.s.w.s.DispatcherServlet               ] : Initializing Servlet 'dispatcherServlet'
-2025-07-15 22:03:30.250 [INFO ] [on(4)-127.0.0.1] [o.s.w.s.DispatcherServlet               ] : Completed initialization in 2 ms
-2025-07-15 22:03:37.268 [INFO ] [ionShutdownHook] [o.s.b.w.e.t.GracefulShutdown            ] : Commencing graceful shutdown. Waiting for active requests to complete
-2025-07-15 22:03:37.271 [INFO ] [tomcat-shutdown] [o.s.b.w.e.t.GracefulShutdown            ] : Graceful shutdown complete
-2025-07-15 22:03:37.277 [INFO ] [ionShutdownHook] [j.LocalContainerEntityManagerFactoryBean] : Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-07-15 22:03:37.279 [INFO ] [ionShutdownHook] [c.z.h.HikariDataSource                  ] : HikariPool-1 - Shutdown initiated...
-2025-07-15 22:03:37.282 [INFO ] [ionShutdownHook] [c.z.h.HikariDataSource                  ] : HikariPool-1 - Shutdown completed.
-2025-07-15 22:03:38.928 [INFO ] [           main] [c.s.b.BookzCustomerApplication          ] : Starting BookzCustomerApplication using Java 17.0.15 with PID 73042 (/home/santhosh/foundation/myProjs/bookz/bookz-customer/target/classes started by santhosh in /home/santhosh/foundation/myProjs/bookz/bookz-customer)
-2025-07-15 22:03:38.928 [INFO ] [           main] [c.s.b.BookzCustomerApplication          ] : Starting BookzCustomerApplication using Java 17.0.15 with PID 73042 (/home/santhosh/foundation/myProjs/bookz/bookz-customer/target/classes started by santhosh in /home/santhosh/foundation/myProjs/bookz/bookz-customer)
-2025-07-15 22:03:38.932 [DEBUG] [           main] [c.s.b.BookzCustomerApplication          ] : Running with Spring Boot v3.5.3, Spring v6.2.8
-2025-07-15 22:03:38.932 [DEBUG] [           main] [c.s.b.BookzCustomerApplication          ] : Running with Spring Boot v3.5.3, Spring v6.2.8
-2025-07-15 22:03:38.933 [INFO ] [           main] [c.s.b.BookzCustomerApplication          ] : No active profile set, falling back to 1 default profile: "default"
-2025-07-15 22:03:38.933 [INFO ] [           main] [c.s.b.BookzCustomerApplication          ] : No active profile set, falling back to 1 default profile: "default"
-2025-07-15 22:03:39.422 [INFO ] [           main] [.s.d.r.c.RepositoryConfigurationDelegate] : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-07-15 22:03:39.453 [INFO ] [           main] [.s.d.r.c.RepositoryConfigurationDelegate] : Finished Spring Data repository scanning in 25 ms. Found 1 JPA repository interface.
-2025-07-15 22:03:39.720 [INFO ] [           main] [o.s.b.w.e.t.TomcatWebServer             ] : Tomcat initialized with port 8282 (http)
-2025-07-15 22:03:39.729 [INFO ] [           main] [o.a.c.h.Http11NioProtocol               ] : Initializing ProtocolHandler ["http-nio-8282"]
-2025-07-15 22:03:39.730 [INFO ] [           main] [o.a.c.c.StandardService                 ] : Starting service [Tomcat]
-2025-07-15 22:03:39.730 [INFO ] [           main] [o.a.c.c.StandardEngine                  ] : Starting Servlet engine: [Apache Tomcat/10.1.42]
-2025-07-15 22:03:39.757 [INFO ] [           main] [o.a.c.c.C.[.[.[/]                       ] : Initializing Spring embedded WebApplicationContext
-2025-07-15 22:03:39.758 [INFO ] [           main] [w.s.c.ServletWebServerApplicationContext] : Root WebApplicationContext: initialization completed in 797 ms
-2025-07-15 22:03:39.911 [INFO ] [           main] [o.h.j.i.u.LogHelper                     ] : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-07-15 22:03:39.937 [INFO ] [           main] [o.h.Version                             ] : HHH000412: Hibernate ORM core version 6.6.18.Final
-2025-07-15 22:03:39.956 [INFO ] [           main] [o.h.c.i.RegionFactoryInitiator          ] : HHH000026: Second-level cache disabled
-2025-07-15 22:03:40.111 [INFO ] [           main] [o.s.o.j.p.SpringPersistenceUnitInfo     ] : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-07-15 22:03:40.130 [INFO ] [           main] [c.z.h.HikariDataSource                  ] : HikariPool-1 - Starting...
-2025-07-15 22:03:40.218 [INFO ] [           main] [c.z.h.p.HikariPool                      ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@7e2a76be
-2025-07-15 22:03:40.219 [INFO ] [           main] [c.z.h.HikariDataSource                  ] : HikariPool-1 - Start completed.
-2025-07-15 22:03:40.261 [INFO ] [           main] [o.h.o.c.pooling                         ] : HHH10001005: Database info:
-	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
-	Database driver: undefined/unknown
-	Database version: 17.5
-	Autocommit mode: undefined/unknown
-	Isolation level: undefined/unknown
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-2025-07-15 22:03:40.703 [INFO ] [           main] [o.h.e.t.j.p.i.JtaPlatformInitiator      ] : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-07-15 22:03:40.736 [INFO ] [           main] [j.LocalContainerEntityManagerFactoryBean] : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-07-15 22:03:40.859 [WARN ] [           main] [JpaBaseConfiguration$JpaWebConfiguration] : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-07-15 22:03:41.137 [INFO ] [           main] [o.s.b.a.e.w.EndpointLinksResolver       ] : Exposing 1 endpoint beneath base path '/actuator'
-2025-07-15 22:03:41.178 [INFO ] [           main] [o.a.c.h.Http11NioProtocol               ] : Starting ProtocolHandler ["http-nio-8282"]
-2025-07-15 22:03:41.187 [INFO ] [           main] [o.s.b.w.e.t.TomcatWebServer             ] : Tomcat started on port 8282 (http) with context path '/'
-2025-07-15 22:03:41.197 [INFO ] [           main] [c.s.b.BookzCustomerApplication          ] : Started BookzCustomerApplication in 2.561 seconds (process running for 3.062)
-2025-07-15 22:03:41.197 [INFO ] [           main] [c.s.b.BookzCustomerApplication          ] : Started BookzCustomerApplication in 2.561 seconds (process running for 3.062)
-2025-07-15 22:03:41.581 [INFO ] [RMI TCP Connection(4)-127.0.0.1] [o.a.c.c.C.[.[.[/]                       ] : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-07-15 22:03:41.582 [INFO ] [RMI TCP Connection(4)-127.0.0.1] [o.s.w.s.DispatcherServlet               ] : Initializing Servlet 'dispatcherServlet'
-2025-07-15 22:03:41.583 [INFO ] [RMI TCP Connection(4)-127.0.0.1] [o.s.w.s.DispatcherServlet               ] : Completed initialization in 1 ms
-2025-07-15 22:03:53.781 [INFO ] [SpringApplicationShutdownHook] [o.s.b.w.e.t.GracefulShutdown            ] : Commencing graceful shutdown. Waiting for active requests to complete
-2025-07-15 22:03:53.784 [INFO ] [tomcat-shutdown] [o.s.b.w.e.t.GracefulShutdown            ] : Graceful shutdown complete
-2025-07-15 22:03:53.790 [INFO ] [SpringApplicationShutdownHook] [j.LocalContainerEntityManagerFactoryBean] : Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-07-15 22:03:53.793 [INFO ] [SpringApplicationShutdownHook] [c.z.h.HikariDataSource                  ] : HikariPool-1 - Shutdown initiated...
-2025-07-15 22:03:53.795 [INFO ] [SpringApplicationShutdownHook] [c.z.h.HikariDataSource                  ] : HikariPool-1 - Shutdown completed.
-2025-07-15 22:03:55.422 [INFO ] [           main] [          c.s.b.BookzCustomerApplication] : Starting BookzCustomerApplication using Java 17.0.15 with PID 73250 (/home/santhosh/foundation/myProjs/bookz/bookz-customer/target/classes started by santhosh in /home/santhosh/foundation/myProjs/bookz/bookz-customer)
-2025-07-15 22:03:55.422 [INFO ] [           main] [          c.s.b.BookzCustomerApplication] : Starting BookzCustomerApplication using Java 17.0.15 with PID 73250 (/home/santhosh/foundation/myProjs/bookz/bookz-customer/target/classes started by santhosh in /home/santhosh/foundation/myProjs/bookz/bookz-customer)
-2025-07-15 22:03:55.427 [DEBUG] [           main] [          c.s.b.BookzCustomerApplication] : Running with Spring Boot v3.5.3, Spring v6.2.8
-2025-07-15 22:03:55.427 [DEBUG] [           main] [          c.s.b.BookzCustomerApplication] : Running with Spring Boot v3.5.3, Spring v6.2.8
-2025-07-15 22:03:55.427 [INFO ] [           main] [          c.s.b.BookzCustomerApplication] : No active profile set, falling back to 1 default profile: "default"
-2025-07-15 22:03:55.427 [INFO ] [           main] [          c.s.b.BookzCustomerApplication] : No active profile set, falling back to 1 default profile: "default"
-2025-07-15 22:03:55.917 [INFO ] [           main] [o.s.d.r.c.RepositoryConfigurationDelegate] : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-07-15 22:03:55.952 [INFO ] [           main] [o.s.d.r.c.RepositoryConfigurationDelegate] : Finished Spring Data repository scanning in 28 ms. Found 1 JPA repository interface.
-2025-07-15 22:03:56.225 [INFO ] [           main] [             o.s.b.w.e.t.TomcatWebServer] : Tomcat initialized with port 8282 (http)
-2025-07-15 22:03:56.234 [INFO ] [           main] [               o.a.c.h.Http11NioProtocol] : Initializing ProtocolHandler ["http-nio-8282"]
-2025-07-15 22:03:56.235 [INFO ] [           main] [                 o.a.c.c.StandardService] : Starting service [Tomcat]
-2025-07-15 22:03:56.235 [INFO ] [           main] [                  o.a.c.c.StandardEngine] : Starting Servlet engine: [Apache Tomcat/10.1.42]
-2025-07-15 22:03:56.261 [INFO ] [           main] [                       o.a.c.c.C.[.[.[/]] : Initializing Spring embedded WebApplicationContext
-2025-07-15 22:03:56.262 [INFO ] [           main] [o.s.b.w.s.c.ServletWebServerApplicationContext] : Root WebApplicationContext: initialization completed in 809 ms
-2025-07-15 22:03:56.438 [INFO ] [           main] [                     o.h.j.i.u.LogHelper] : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-07-15 22:03:56.465 [INFO ] [           main] [                             o.h.Version] : HHH000412: Hibernate ORM core version 6.6.18.Final
-2025-07-15 22:03:56.484 [INFO ] [           main] [          o.h.c.i.RegionFactoryInitiator] : HHH000026: Second-level cache disabled
-2025-07-15 22:03:56.629 [INFO ] [           main] [     o.s.o.j.p.SpringPersistenceUnitInfo] : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-07-15 22:03:56.648 [INFO ] [           main] [                  c.z.h.HikariDataSource] : HikariPool-1 - Starting...
-2025-07-15 22:03:56.734 [INFO ] [           main] [                      c.z.h.p.HikariPool] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@20155dae
-2025-07-15 22:03:56.735 [INFO ] [           main] [                  c.z.h.HikariDataSource] : HikariPool-1 - Start completed.
-2025-07-15 22:03:56.775 [INFO ] [           main] [                         o.h.o.c.pooling] : HHH10001005: Database info:
-	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
-	Database driver: undefined/unknown
-	Database version: 17.5
-	Autocommit mode: undefined/unknown
-	Isolation level: undefined/unknown
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-2025-07-15 22:03:57.222 [INFO ] [           main] [      o.h.e.t.j.p.i.JtaPlatformInitiator] : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-07-15 22:03:57.255 [INFO ] [           main] [o.s.o.j.LocalContainerEntityManagerFactoryBean] : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-07-15 22:03:57.370 [WARN ] [           main] [o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration] : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-07-15 22:03:57.648 [INFO ] [           main] [       o.s.b.a.e.w.EndpointLinksResolver] : Exposing 1 endpoint beneath base path '/actuator'
-2025-07-15 22:03:57.687 [INFO ] [           main] [               o.a.c.h.Http11NioProtocol] : Starting ProtocolHandler ["http-nio-8282"]
-2025-07-15 22:03:57.695 [INFO ] [           main] [             o.s.b.w.e.t.TomcatWebServer] : Tomcat started on port 8282 (http) with context path '/'
-2025-07-15 22:03:57.705 [INFO ] [           main] [          c.s.b.BookzCustomerApplication] : Started BookzCustomerApplication in 2.568 seconds (process running for 3.064)
-2025-07-15 22:03:57.705 [INFO ] [           main] [          c.s.b.BookzCustomerApplication] : Started BookzCustomerApplication in 2.568 seconds (process running for 3.064)
-2025-07-15 22:03:58.023 [INFO ] [RMI TCP Connection(4)-127.0.0.1] [                       o.a.c.c.C.[.[.[/]] : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-07-15 22:03:58.023 [INFO ] [RMI TCP Connection(4)-127.0.0.1] [               o.s.w.s.DispatcherServlet] : Initializing Servlet 'dispatcherServlet'
-2025-07-15 22:03:58.025 [INFO ] [RMI TCP Connection(4)-127.0.0.1] [               o.s.w.s.DispatcherServlet] : Completed initialization in 2 ms
-2025-07-15 22:06:15.599 [INFO ] [SpringApplicationShutdownHook] [            o.s.b.w.e.t.GracefulShutdown] : Commencing graceful shutdown. Waiting for active requests to complete
-2025-07-15 22:06:15.603 [INFO ] [tomcat-shutdown] [            o.s.b.w.e.t.GracefulShutdown] : Graceful shutdown complete
-2025-07-15 22:06:15.609 [INFO ] [SpringApplicationShutdownHook] [o.s.o.j.LocalContainerEntityManagerFactoryBean] : Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-07-15 22:06:15.611 [INFO ] [SpringApplicationShutdownHook] [                  c.z.h.HikariDataSource] : HikariPool-1 - Shutdown initiated...
-2025-07-15 22:06:15.613 [INFO ] [SpringApplicationShutdownHook] [                  c.z.h.HikariDataSource] : HikariPool-1 - Shutdown completed.
+2025-07-15 23:34:19.877 [INFO ] [           main] [o.h.e.t.j.p.i.JtaPlatformInitiator      ] : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-07-15 23:34:19.911 [INFO ] [           main] [j.LocalContainerEntityManagerFactoryBean] : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-07-15 23:34:20.390 [INFO ] [           main] [o.a.c.h.Http11NioProtocol               ] : Starting ProtocolHandler ["http-nio-8282"]
+2025-07-15 23:34:20.415 [INFO ] [           main] [c.s.b.BookzCustomerApplication          ] : Started BookzCustomerApplication in 2.999 seconds (process running for 3.664)
+2025-07-15 23:34:20.610 [INFO ] [on(1)-127.0.0.1] [o.a.c.c.C.[.[.[/]                       ] : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-07-15 23:34:20.610 [INFO ] [on(1)-127.0.0.1] [o.s.w.s.DispatcherServlet               ] : Initializing Servlet 'dispatcherServlet'
+2025-07-15 23:34:20.612 [INFO ] [on(1)-127.0.0.1] [o.s.w.s.DispatcherServlet               ] : Completed initialization in 1 ms
+2025-07-15 23:34:23.892 [INFO ] [nio-8282-exec-1] [c.s.b.u.DateFormatUtils                 ] : dateString:2000/05/26 and the format: Value(MonthOfYear,2)'-'Value(DayOfMonth,2)'-'Value(YearOfEra,4,19,EXCEEDS_PAD)
+2025-07-15 23:34:23.894 [ERROR] [nio-8282-exec-1] [c.s.b.u.DateFormatUtils                 ] : Exception while parsing the date: Text '2000/05/26' could not be parsed at index 2
+2025-07-15 23:34:23.894 [INFO ] [nio-8282-exec-1] [c.s.b.u.DateFormatUtils                 ] : dateString:2000/05/26 and the format: Value(DayOfMonth,2)'-'Value(MonthOfYear,2)'-'Value(YearOfEra,4,19,EXCEEDS_PAD)
+2025-07-15 23:34:23.894 [ERROR] [nio-8282-exec-1] [c.s.b.u.DateFormatUtils                 ] : Exception while parsing the date: Text '2000/05/26' could not be parsed at index 2
+2025-07-15 23:34:23.894 [INFO ] [nio-8282-exec-1] [c.s.b.u.DateFormatUtils                 ] : dateString:2000/05/26 and the format: Value(YearOfEra,4,19,EXCEEDS_PAD)'-'Value(MonthOfYear,2)'-'Value(DayOfMonth,2)
+2025-07-15 23:34:23.894 [ERROR] [nio-8282-exec-1] [c.s.b.u.DateFormatUtils                 ] : Exception while parsing the date: Text '2000/05/26' could not be parsed at index 4
+2025-07-15 23:34:23.894 [INFO ] [nio-8282-exec-1] [c.s.b.u.DateFormatUtils                 ] : dateString:2000/05/26 and the format: Value(DayOfMonth,2)'/'Value(MonthOfYear,2)'/'Value(YearOfEra,4,19,EXCEEDS_PAD)
+2025-07-15 23:34:23.894 [ERROR] [nio-8282-exec-1] [c.s.b.u.DateFormatUtils                 ] : Exception while parsing the date: Text '2000/05/26' could not be parsed at index 2
+2025-07-15 23:34:23.894 [INFO ] [nio-8282-exec-1] [c.s.b.u.DateFormatUtils                 ] : dateString:2000/05/26 and the format: Value(MonthOfYear,2)'/'Value(DayOfMonth,2)'/'Value(YearOfEra,4,19,EXCEEDS_PAD)
+2025-07-15 23:34:23.894 [ERROR] [nio-8282-exec-1] [c.s.b.u.DateFormatUtils                 ] : Exception while parsing the date: Text '2000/05/26' could not be parsed at index 2
+2025-07-15 23:34:23.895 [INFO ] [nio-8282-exec-1] [c.s.b.u.DateFormatUtils                 ] : dateString:2000/05/26 and the format: Value(YearOfEra,4,19,EXCEEDS_PAD)'/'Value(MonthOfYear,2)'/'Value(DayOfMonth,2)
+2025-07-15 23:34:24.024 [INFO ] [nio-8282-exec-1] [c.s.b.s.CustomerServiceImp              ] : New customer saved successfully:Customer(id=8, name=user4, email=user4@gmail.com, password=$2a$10$xRcpWW7WtZYyvgYGEggHWeouPsA7cKuOCIjitZDrujJt30Q0o/D7e, number=4444444444, dateOfBirth=2000-05-26, customerStatus=ACTIVE)
