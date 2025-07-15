@@ -81,3 +81,6 @@
 2025-07-15 23:34:23.894 [ERROR] [nio-8282-exec-1] [c.s.b.u.DateFormatUtils                 ] : Exception while parsing the date: Text '2000/05/26' could not be parsed at index 2
 2025-07-15 23:34:23.895 [INFO ] [nio-8282-exec-1] [c.s.b.u.DateFormatUtils                 ] : dateString:2000/05/26 and the format: Value(YearOfEra,4,19,EXCEEDS_PAD)'/'Value(MonthOfYear,2)'/'Value(DayOfMonth,2)
 2025-07-15 23:34:24.024 [INFO ] [nio-8282-exec-1] [c.s.b.s.CustomerServiceImp              ] : New customer saved successfully:Customer(id=8, name=user4, email=user4@gmail.com, password=$2a$10$xRcpWW7WtZYyvgYGEggHWeouPsA7cKuOCIjitZDrujJt30Q0o/D7e, number=4444444444, dateOfBirth=2000-05-26, customerStatus=ACTIVE)
+2025-07-15 23:42:24.817 [INFO ] [ionShutdownHook] [j.LocalContainerEntityManagerFactoryBean] : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-07-15 23:42:24.820 [INFO ] [ionShutdownHook] [c.z.h.HikariDataSource                  ] : HikariPool-1 - Shutdown initiated...
+2025-07-15 23:42:24.823 [INFO ] [ionShutdownHook] [c.z.h.HikariDataSource                  ] : HikariPool-1 - Shutdown completed.
