@@ -1,0 +1,47 @@
+2025-07-16 14:54:06.235 [INFO ] [kground-preinit] [o.h.v.i.u.Version                       ] : HV000001: Hibernate Validator 8.0.2.Final
+2025-07-16 14:54:06.262 [INFO ] [           main] [c.s.b.BookzCustomerApplication          ] : Starting BookzCustomerApplication using Java 17.0.15 with PID 24876 (/home/santhosh/foundation/myProjs/bookz/bookz-customer/target/classes started by santhosh in /home/santhosh/foundation/myProjs/bookz/bookz-customer)
+2025-07-16 14:54:06.263 [DEBUG] [           main] [c.s.b.BookzCustomerApplication          ] : Running with Spring Boot v3.5.3, Spring v6.2.8
+2025-07-16 14:54:06.265 [INFO ] [           main] [c.s.b.BookzCustomerApplication          ] : No active profile set, falling back to 1 default profile: "default"
+2025-07-16 14:54:06.833 [INFO ] [           main] [.s.d.r.c.RepositoryConfigurationDelegate] : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-07-16 14:54:06.874 [INFO ] [           main] [.s.d.r.c.RepositoryConfigurationDelegate] : Finished Spring Data repository scanning in 32 ms. Found 1 JPA repository interface.
+2025-07-16 14:54:07.204 [INFO ] [           main] [o.a.c.h.Http11NioProtocol               ] : Initializing ProtocolHandler ["http-nio-8282"]
+2025-07-16 14:54:07.205 [INFO ] [           main] [o.a.c.c.StandardService                 ] : Starting service [Tomcat]
+2025-07-16 14:54:07.206 [INFO ] [           main] [o.a.c.c.StandardEngine                  ] : Starting Servlet engine: [Apache Tomcat/10.1.42]
+2025-07-16 14:54:07.233 [INFO ] [           main] [o.a.c.c.C.[.[.[/]                       ] : Initializing Spring embedded WebApplicationContext
+2025-07-16 14:54:07.382 [INFO ] [           main] [o.h.j.i.u.LogHelper                     ] : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-07-16 14:54:07.412 [INFO ] [           main] [o.h.Version                             ] : HHH000412: Hibernate ORM core version 6.6.18.Final
+2025-07-16 14:54:07.432 [INFO ] [           main] [o.h.c.i.RegionFactoryInitiator          ] : HHH000026: Second-level cache disabled
+2025-07-16 14:54:07.593 [INFO ] [           main] [o.s.o.j.p.SpringPersistenceUnitInfo     ] : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-07-16 14:54:07.612 [INFO ] [           main] [c.z.h.HikariDataSource                  ] : HikariPool-1 - Starting...
+2025-07-16 14:54:07.716 [INFO ] [           main] [c.z.h.p.HikariPool                      ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@6c49ea0c
+2025-07-16 14:54:07.717 [INFO ] [           main] [c.z.h.HikariDataSource                  ] : HikariPool-1 - Start completed.
+2025-07-16 14:54:07.765 [INFO ] [           main] [o.h.o.c.pooling                         ] : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.5
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-07-16 14:54:08.287 [INFO ] [           main] [o.h.e.t.j.p.i.JtaPlatformInitiator      ] : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-07-16 14:54:08.321 [INFO ] [           main] [j.LocalContainerEntityManagerFactoryBean] : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-07-16 14:54:08.846 [INFO ] [           main] [o.a.c.h.Http11NioProtocol               ] : Starting ProtocolHandler ["http-nio-8282"]
+2025-07-16 14:54:08.869 [INFO ] [           main] [c.s.b.BookzCustomerApplication          ] : Started BookzCustomerApplication in 2.931 seconds (process running for 3.447)
+2025-07-16 14:54:09.133 [INFO ] [on(4)-127.0.0.1] [o.a.c.c.C.[.[.[/]                       ] : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-07-16 14:54:09.133 [INFO ] [on(4)-127.0.0.1] [o.s.w.s.DispatcherServlet               ] : Initializing Servlet 'dispatcherServlet'
+2025-07-16 14:54:09.135 [INFO ] [on(4)-127.0.0.1] [o.s.w.s.DispatcherServlet               ] : Completed initialization in 2 ms
+2025-07-16 14:54:32.423 [INFO ] [nio-8282-exec-1] [c.s.b.u.DateFormatUtils                 ] : dateString:2026-05-16 and the format: Value(MonthOfYear,2)'-'Value(DayOfMonth,2)'-'Value(YearOfEra,4,19,EXCEEDS_PAD)
+2025-07-16 14:54:32.424 [ERROR] [nio-8282-exec-1] [c.s.b.u.DateFormatUtils                 ] : Exception while parsing the date: Text '2026-05-16' could not be parsed at index 2
+2025-07-16 14:54:32.424 [INFO ] [nio-8282-exec-1] [c.s.b.u.DateFormatUtils                 ] : dateString:2026-05-16 and the format: Value(DayOfMonth,2)'-'Value(MonthOfYear,2)'-'Value(YearOfEra,4,19,EXCEEDS_PAD)
+2025-07-16 14:54:32.424 [ERROR] [nio-8282-exec-1] [c.s.b.u.DateFormatUtils                 ] : Exception while parsing the date: Text '2026-05-16' could not be parsed at index 2
+2025-07-16 14:54:32.424 [INFO ] [nio-8282-exec-1] [c.s.b.u.DateFormatUtils                 ] : dateString:2026-05-16 and the format: Value(YearOfEra,4,19,EXCEEDS_PAD)'-'Value(MonthOfYear,2)'-'Value(DayOfMonth,2)
+2025-07-16 14:54:32.473 [WARN ] [nio-8282-exec-1] [.w.s.m.s.DefaultHandlerExceptionResolver] : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.sk.bookz_customer.dto.CustomerDto> com.sk.bookz_customer.controller.CustomerController.addCustomer(com.sk.bookz_customer.dto.CustomerDto): [Field error in object 'customerDto' on field 'dateOfBirth': rejected value [2026-05-16]; codes [DateOfBirth.customerDto.dateOfBirth,DateOfBirth.dateOfBirth,DateOfBirth.java.time.LocalDate,DateOfBirth]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [customerDto.dateOfBirth,dateOfBirth]; arguments []; default message [dateOfBirth]]; default message [Invalid BirthDate, ]] ]
+2025-07-16 14:54:47.748 [INFO ] [nio-8282-exec-4] [c.s.b.u.DateFormatUtils                 ] : dateString:2021-05-16 and the format: Value(MonthOfYear,2)'-'Value(DayOfMonth,2)'-'Value(YearOfEra,4,19,EXCEEDS_PAD)
+2025-07-16 14:54:47.749 [ERROR] [nio-8282-exec-4] [c.s.b.u.DateFormatUtils                 ] : Exception while parsing the date: Text '2021-05-16' could not be parsed at index 2
+2025-07-16 14:54:47.749 [INFO ] [nio-8282-exec-4] [c.s.b.u.DateFormatUtils                 ] : dateString:2021-05-16 and the format: Value(DayOfMonth,2)'-'Value(MonthOfYear,2)'-'Value(YearOfEra,4,19,EXCEEDS_PAD)
+2025-07-16 14:54:47.749 [ERROR] [nio-8282-exec-4] [c.s.b.u.DateFormatUtils                 ] : Exception while parsing the date: Text '2021-05-16' could not be parsed at index 2
+2025-07-16 14:54:47.749 [INFO ] [nio-8282-exec-4] [c.s.b.u.DateFormatUtils                 ] : dateString:2021-05-16 and the format: Value(YearOfEra,4,19,EXCEEDS_PAD)'-'Value(MonthOfYear,2)'-'Value(DayOfMonth,2)
+2025-07-16 14:54:47.881 [INFO ] [nio-8282-exec-4] [c.s.b.s.CustomerServiceImp              ] : New customer saved successfully:Customer(id=11, name=user6, email=user6@gmail.com, password=$2a$10$o9cKuWgz3.UkVB2ZtBF.rudLDStKGwKfs5TtkM3fE0KSFWL.Ntuna, number=6666666666, dateOfBirth=2021-05-16, customerStatus=ACTIVE)
+2025-07-16 14:54:52.653 [INFO ] [ionShutdownHook] [j.LocalContainerEntityManagerFactoryBean] : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-07-16 14:54:52.655 [INFO ] [ionShutdownHook] [c.z.h.HikariDataSource                  ] : HikariPool-1 - Shutdown initiated...
+2025-07-16 14:54:52.658 [INFO ] [ionShutdownHook] [c.z.h.HikariDataSource                  ] : HikariPool-1 - Shutdown completed.

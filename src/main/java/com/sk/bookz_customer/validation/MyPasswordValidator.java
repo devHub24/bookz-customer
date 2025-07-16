@@ -1,11 +1,13 @@
 package com.sk.bookz_customer.validation;
 
 import com.sk.bookz_customer.annotations.Password;
+import com.sk.bookz_customer.constants.EnglishCharacterSet;
+import com.sk.bookz_customer.validation.rules.CharacterRule;
 import com.sk.bookz_customer.validation.rules.LengthRule;
 import com.sk.bookz_customer.validation.rules.PasswordRule;
 import com.sk.bookz_customer.validation.rules.RuleResult;
 import com.sk.bookz_customer.validation.validators.CustomPasswordValidator;
-import com.sk.bookz_customer.validation.validators.PasswordValidator;
+import com.sk.bookz_customer.validation.validators.CustomerValidator;
 import jakarta.validation.ConstraintValidator;
 import jakarta.validation.ConstraintValidatorContext;
 
@@ -25,10 +27,14 @@ public class MyPasswordValidator implements ConstraintValidator<Password, String
 
     @Override
     public boolean isValid(String s, ConstraintValidatorContext constraintValidatorContext) {
+        //Setting up rules
         List<PasswordRule> passwordRules = new ArrayList<>();
         passwordRules.add(new LengthRule(MIN_LENGTH, MAX_LENGTH));
-        PasswordValidator passwordValidator = new CustomPasswordValidator(s, passwordRules);
+        passwordRules.add(new CharacterRule(EnglishCharacterSet.UPPERCASE, MIN_UPPERCASE_CHAR));
+
+        CustomerValidator passwordValidator = new CustomPasswordValidator(s, passwordRules);
         RuleResult ruleResult = passwordValidator.validate();
+
         if(!ruleResult.isValid()){
             constraintValidatorContext.disableDefaultConstraintViolation();
             constraintValidatorContext.buildConstraintViolationWithTemplate(ruleResult.getMessage()).addConstraintViolation();
@@ -44,7 +50,7 @@ public class MyPasswordValidator implements ConstraintValidator<Password, String
 //        passwordRules.add(new LengthRule(MIN_LENGTH,MAX_LENGTH));
 //        passwordRules.add(getCharacterRules());
 //        passwordRules.add(new RepeatCharacterRegexRule(MAX_REPETITIVE_CHAR));
- //       PasswordValidator passwordValidator = new PasswordValidator(passwordRules);
+ //       CustomerValidator passwordValidator = new CustomerValidator(passwordRules);
  //       RuleResult result = passwordValidator.validate(passwordData);
 //        return result.isValid();
 //    }

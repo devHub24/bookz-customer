@@ -5,6 +5,7 @@ import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
+import com.sk.bookz_customer.annotations.DateOfBirth;
 import com.sk.bookz_customer.annotations.Password;
 import com.sk.bookz_customer.constants.CustomerConstants;
 import com.sk.bookz_customer.constants.CustomerStatus;
@@ -48,6 +49,7 @@ public class CustomerDto {
     @JsonProperty(value = "status", required = false)
     private CustomerStatus customerStatus;
 
+    @DateOfBirth
     @JsonProperty(value="dateOfBirth", required = true,access = JsonProperty.Access.WRITE_ONLY)
     @JsonDeserialize(using = DateFormatUtils.class)
     @JsonFormat(shape =  JsonFormat.Shape.STRING, pattern = CustomerConstants.DOB_PATTERN)

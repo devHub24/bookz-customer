@@ -5,7 +5,7 @@ import com.sk.bookz_customer.validation.rules.RuleResult;
 
 import java.util.List;
 
-public class CustomPasswordValidator implements PasswordValidator {
+public class CustomPasswordValidator implements CustomerValidator {
 
     private String password;
     private List<PasswordRule> passwordRules;
