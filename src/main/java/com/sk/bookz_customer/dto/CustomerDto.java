@@ -7,6 +7,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import com.sk.bookz_customer.annotations.DateOfBirth;
 import com.sk.bookz_customer.annotations.Password;
+import com.sk.bookz_customer.annotations.PhoneNumber;
 import com.sk.bookz_customer.constants.CustomerConstants;
 import com.sk.bookz_customer.constants.CustomerStatus;
 import com.sk.bookz_customer.utils.DateFormatUtils;
@@ -42,6 +43,7 @@ public class CustomerDto {
     @JsonProperty(value = "password", required = true, access = JsonProperty.Access.WRITE_ONLY)
     private String password;
 
+    @PhoneNumber
     @NotBlank(message = "Phone number can't be blank")
     @JsonProperty(value = "number", required = true)
     private String number;

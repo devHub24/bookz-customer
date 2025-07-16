@@ -7,16 +7,8 @@ import lombok.Setter;
 @Setter
 @Getter
 public class CharacterRule implements PasswordRule{
-
-    private String password;
     private CharacterSet characterSet;
     private int minNumberOfCharacters;
-
-    public CharacterRule(String password, CharacterSet characterSet, int minNumberOfCharacters) {
-        this.password = password;
-        this.characterSet = characterSet;
-        this.minNumberOfCharacters = minNumberOfCharacters;
-    }
 
     public CharacterRule(CharacterSet characterSet, int minNumberOfCharacters) {
         this.characterSet = characterSet;

@@ -1,6 +1,6 @@
 package com.sk.bookz_customer.annotations;
 
-import com.sk.bookz_customer.validation.BirthDateValidation;
+import com.sk.bookz_customer.validation.BirthDateConstraint;
 import jakarta.validation.Constraint;
 import jakarta.validation.Payload;
 
@@ -11,7 +11,7 @@ import java.lang.annotation.Target;
 
 @Target(ElementType.FIELD)
 @Retention(RetentionPolicy.RUNTIME)
-@Constraint(validatedBy= BirthDateValidation.class)
+@Constraint(validatedBy= BirthDateConstraint.class)
 public @interface DateOfBirth {
 
     String message() default "Birth date is invalid";

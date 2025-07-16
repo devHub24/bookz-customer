@@ -1,0 +1,9 @@
+2025-07-16 15:38:03.576 [INFO ] [nio-8282-exec-4] [c.s.b.u.DateFormatUtils                 ] : dateString:2021-05-16 and the format: Value(MonthOfYear,2)'-'Value(DayOfMonth,2)'-'Value(YearOfEra,4,19,EXCEEDS_PAD)
+2025-07-16 15:38:03.579 [ERROR] [nio-8282-exec-4] [c.s.b.u.DateFormatUtils                 ] : Exception while parsing the date: Text '2021-05-16' could not be parsed at index 2
+2025-07-16 15:38:03.579 [INFO ] [nio-8282-exec-4] [c.s.b.u.DateFormatUtils                 ] : dateString:2021-05-16 and the format: Value(DayOfMonth,2)'-'Value(MonthOfYear,2)'-'Value(YearOfEra,4,19,EXCEEDS_PAD)
+2025-07-16 15:38:03.579 [ERROR] [nio-8282-exec-4] [c.s.b.u.DateFormatUtils                 ] : Exception while parsing the date: Text '2021-05-16' could not be parsed at index 2
+2025-07-16 15:38:03.579 [INFO ] [nio-8282-exec-4] [c.s.b.u.DateFormatUtils                 ] : dateString:2021-05-16 and the format: Value(YearOfEra,4,19,EXCEEDS_PAD)'-'Value(MonthOfYear,2)'-'Value(DayOfMonth,2)
+2025-07-16 15:38:03.709 [INFO ] [nio-8282-exec-4] [c.s.b.s.CustomerServiceImp              ] : New customer saved successfully:Customer(id=12, name=user7, email=user7@gmail.com, password=$2a$10$cjoUY8ZVHSIcMMYwnJe/Iuu47gkbDz98y/eY4CJWLIbsIUMGWNhrW, number=7777777777, dateOfBirth=2021-05-16, customerStatus=ACTIVE)
+2025-07-16 15:40:05.653 [INFO ] [ionShutdownHook] [j.LocalContainerEntityManagerFactoryBean] : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-07-16 15:40:05.655 [INFO ] [ionShutdownHook] [c.z.h.HikariDataSource                  ] : HikariPool-1 - Shutdown initiated...
+2025-07-16 15:40:05.657 [INFO ] [ionShutdownHook] [c.z.h.HikariDataSource                  ] : HikariPool-1 - Shutdown completed.

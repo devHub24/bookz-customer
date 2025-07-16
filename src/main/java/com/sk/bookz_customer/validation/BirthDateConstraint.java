@@ -11,7 +11,7 @@ import jakarta.validation.ConstraintValidatorContext;
 import java.time.LocalDate;
 import java.util.List;
 
-public class BirthDateValidation implements ConstraintValidator<DateOfBirth, LocalDate> {
+public class BirthDateConstraint implements ConstraintValidator<DateOfBirth, LocalDate> {
     @Override
     public boolean isValid(LocalDate localDate, ConstraintValidatorContext constraintValidatorContext) {
         List<DateRule> dateRules = List.of(new BirthDateRule());

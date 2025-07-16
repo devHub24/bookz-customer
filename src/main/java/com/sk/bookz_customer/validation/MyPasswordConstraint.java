@@ -15,7 +15,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-public class MyPasswordValidator implements ConstraintValidator<Password, String> {
+public class MyPasswordConstraint implements ConstraintValidator<Password, String> {
 
     private static final int MAX_LENGTH =30;
     private static final int MIN_LENGTH = 8;
