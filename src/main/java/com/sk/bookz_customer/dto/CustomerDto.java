@@ -5,9 +5,13 @@ import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
+import com.sk.bookz_customer.annotations.Password;
 import com.sk.bookz_customer.constants.CustomerConstants;
 import com.sk.bookz_customer.constants.CustomerStatus;
 import com.sk.bookz_customer.utils.DateFormatUtils;
+import jakarta.validation.constraints.Digits;
+import jakarta.validation.constraints.Email;
+import jakarta.validation.constraints.NotBlank;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -25,15 +29,19 @@ public class CustomerDto {
     @JsonProperty(value = "id", required = false)
     private Long id;
 
+    @NotBlank(message = "User name can't be empty")
     @JsonProperty(value = "name", required = true)
     private String name;
 
+    @Email(message = "Invalid email id")
     @JsonProperty(value="email",required = true)
     private String email;
 
+    @Password(message = "Password Doesn't match our policy")
     @JsonProperty(value = "password", required = true, access = JsonProperty.Access.WRITE_ONLY)
     private String password;
 
+    @NotBlank(message = "Phone number can't be blank")
     @JsonProperty(value = "number", required = true)
     private String number;
 
