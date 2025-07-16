@@ -31,6 +31,9 @@ public class MyPasswordValidator implements ConstraintValidator<Password, String
         List<PasswordRule> passwordRules = new ArrayList<>();
         passwordRules.add(new LengthRule(MIN_LENGTH, MAX_LENGTH));
         passwordRules.add(new CharacterRule(EnglishCharacterSet.UPPERCASE, MIN_UPPERCASE_CHAR));
+        passwordRules.add(new CharacterRule(EnglishCharacterSet.LOWERCASE,MIN_LOWERCASE_CHAR));
+        passwordRules.add(new CharacterRule(EnglishCharacterSet.DIGITS,MIN_DIGIT));
+
 
         CustomerValidator passwordValidator = new CustomPasswordValidator(s, passwordRules);
         RuleResult ruleResult = passwordValidator.validate();
