@@ -5,6 +5,7 @@ import com.sk.bookz_customer.validation.rules.BirthDateRule;
 import com.sk.bookz_customer.validation.rules.DateRule;
 import com.sk.bookz_customer.validation.rules.RuleResult;
 import com.sk.bookz_customer.validation.validators.BirthDateValidator;
+import com.sk.bookz_customer.validation.validators.CustomerValidator;
 import jakarta.validation.ConstraintValidator;
 import jakarta.validation.ConstraintValidatorContext;
 
@@ -15,7 +16,7 @@ public class BirthDateConstraint implements ConstraintValidator<DateOfBirth, Loc
     @Override
     public boolean isValid(LocalDate localDate, ConstraintValidatorContext constraintValidatorContext) {
         List<DateRule> dateRules = List.of(new BirthDateRule());
-        BirthDateValidator validator = new BirthDateValidator(localDate,dateRules);
+        CustomerValidator validator = new BirthDateValidator(localDate,dateRules);
         RuleResult ruleResult = validator.validate();
         if(!ruleResult.isValid()){
             constraintValidatorContext.disableDefaultConstraintViolation();
