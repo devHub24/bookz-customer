@@ -1,0 +1,3 @@
+2025-07-16 14:38:11.041 [INFO ] [ionShutdownHook] [j.LocalContainerEntityManagerFactoryBean] : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-07-16 14:38:11.052 [INFO ] [ionShutdownHook] [c.z.h.HikariDataSource                  ] : HikariPool-1 - Shutdown initiated...
+2025-07-16 14:38:11.054 [INFO ] [ionShutdownHook] [c.z.h.HikariDataSource                  ] : HikariPool-1 - Shutdown completed.
