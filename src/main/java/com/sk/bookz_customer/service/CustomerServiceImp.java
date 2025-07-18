@@ -35,4 +35,9 @@ public class CustomerServiceImp implements ICustomerService {
     private String encryptPassword(String password) {
         return bCryptPasswordEncoder.encode(password);
     }
+
+    @Override
+    public  Long count(){
+        return customerRepo.count();
+    }
 }
