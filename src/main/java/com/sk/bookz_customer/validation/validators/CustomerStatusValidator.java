@@ -9,7 +9,6 @@ import java.util.List;
 
 public class CustomerStatusValidator implements CustomerValidator {
     private CustomerStatus customerStatus;
-    private String message;
     private List<IStatusRule> rules;
 
     public CustomerStatusValidator(CustomerStatus customerStatus, List<IStatusRule> rules) {
