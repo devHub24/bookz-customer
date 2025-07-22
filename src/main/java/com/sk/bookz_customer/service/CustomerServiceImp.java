@@ -42,7 +42,7 @@ public class CustomerServiceImp implements ICustomerService {
     @SneakyThrows
     public CustomerDto newCustomer(CustomerDto customerDto) {
         customerDto.setPassword(encryptPassword(customerDto.getPassword()));
-        customerDto.setCustomerStatus(CustomerStatus.ACTIVE);
+        if(customerDto.getCustomerStatus()==null) customerDto.setCustomerStatus(CustomerStatus.ACTIVE);
         Customer savedCustomer = customerTimer.recordCallable(()->customerRepo.save(CustomerMapper.toCustomer(customerDto)));
         LOGGER.info("New customer saved successfully:{}", savedCustomer);
         return CustomerMapper.toCustomerDto(savedCustomer);

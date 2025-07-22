@@ -55,7 +55,6 @@ public class CustomerDto {
     @JsonProperty(value = "status", required = false)
     private CustomerStatus customerStatus;
 
-    @NotBlank(message = "DOB can't be blank", groups = {OnCreate.class})
     @DateOfBirth(groups = {OnCreate.class, OnUpdate.class})
     @JsonProperty(value="dateOfBirth", required = true,access = JsonProperty.Access.WRITE_ONLY)
     @JsonDeserialize(using = DateFormatUtils.class)
