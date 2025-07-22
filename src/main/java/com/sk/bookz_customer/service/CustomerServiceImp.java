@@ -79,5 +79,27 @@ public class CustomerServiceImp implements ICustomerService {
                 CustomerMapper.updateCustomerMapper(customerDto, customer)));
     }
 
+    @Override
+    public CustomerDto findById(Long id) {
+        LOGGER.info("Finding Customer with id:{}", id);
+        return CustomerMapper.toCustomerDto(customerRepo.findById(id)
+                .orElseThrow(()->
+                new CustomerNotFoundException("Customer not found with id:"+id)));
+    }
+
+    @Override
+    public CustomerDto findByEmail(String email) {
+        LOGGER.info("Finding Customer with email:{}", email);
+        return CustomerMapper.toCustomerDto(customerRepo.findByEmail(email)
+                .orElseThrow(()->
+                        new CustomerNotFoundException("Customer not found with mail:"+email)));
+    }
+
+    @Override
+    public void delete(Long id) {
+        LOGGER.warn("Deleting Customer with id:{}", id);
+        customerRepo.deleteById(id);
+    }
+
 
 }

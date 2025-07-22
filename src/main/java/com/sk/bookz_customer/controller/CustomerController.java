@@ -32,4 +32,20 @@ public class CustomerController {
         CustomerDto result = customerService.updateCustomer(id, customerDto);
         return ResponseEntity.ok(result);
     }
+
+    @GetMapping("/{id}")
+    public ResponseEntity<CustomerDto> getCustomerById(@PathVariable("id") long id){
+        return ResponseEntity.ok(customerService.findById(id));
+    }
+
+    @GetMapping("/{email}")
+    public ResponseEntity<CustomerDto> getCustomerByEmail(@PathVariable("email") String email){
+        return ResponseEntity.ok(customerService.findByEmail(email));
+    }
+
+    @DeleteMapping("/{id}")
+    public ResponseEntity<CustomerDto> deleteCustomer(@PathVariable("id") long id){
+        customerService.delete(id);
+    }
+
 }
