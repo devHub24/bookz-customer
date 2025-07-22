@@ -32,6 +32,7 @@
         </Logger>
         <Logger name="com.sk.bookz_customer" level="debug" additivity="false">
             <AppenderRef ref="FileAppender"/>
+            <AppenderRef ref="ConsoleAppender"/>
         </Logger>
         <Root level ="info">
             <AppenderRef ref="ConsoleAppender"/>

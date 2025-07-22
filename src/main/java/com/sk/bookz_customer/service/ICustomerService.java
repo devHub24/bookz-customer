@@ -9,4 +9,5 @@ public interface ICustomerService {
     public CustomerDto newCustomer(CustomerDto customerDto);
     public Long count();
     public List<CustomerDto> findAll();
+    public CustomerDto updateCustomer(Long id, CustomerDto customerDto);
 }

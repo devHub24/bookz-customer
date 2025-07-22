@@ -8,6 +8,8 @@ import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import com.sk.bookz_customer.annotations.DateOfBirth;
 import com.sk.bookz_customer.annotations.Password;
 import com.sk.bookz_customer.annotations.PhoneNumber;
+import com.sk.bookz_customer.annotations.markers.OnCreate;
+import com.sk.bookz_customer.annotations.markers.OnUpdate;
 import com.sk.bookz_customer.constants.CustomerConstants;
 import com.sk.bookz_customer.constants.CustomerStatus;
 import com.sk.bookz_customer.utils.DateFormatUtils;
@@ -31,27 +33,30 @@ public class CustomerDto {
     @JsonProperty(value = "id", required = false)
     private Long id;
 
-    @NotBlank(message = "User name can't be empty")
+    @NotBlank(message = "User name can't be empty", groups = {OnCreate.class})
     @JsonProperty(value = "name", required = true)
     private String name;
 
-    @Email(message = "Invalid email id")
+    @NotBlank(message = "Email can't be blank", groups = {OnCreate.class})
+    @Email(message = "Invalid email id",groups = {OnCreate.class,OnUpdate.class})
     @JsonProperty(value="email",required = true)
     private String email;
 
-    @Password(message = "Password Doesn't match our policy")
+    @NotBlank(message = "Password can't be blank", groups = {OnCreate.class})
+    @Password(message = "Password Doesn't match our policy",  groups = {OnCreate.class,OnUpdate.class})
     @JsonProperty(value = "password", required = true, access = JsonProperty.Access.WRITE_ONLY)
     private String password;
 
-    @PhoneNumber
-    @NotBlank(message = "Phone number can't be blank")
+    @NotBlank(message = "Password can't be blank", groups = {OnCreate.class})
+    @PhoneNumber(groups = {OnCreate.class, OnUpdate.class})
     @JsonProperty(value = "number", required = true)
     private String number;
 
     @JsonProperty(value = "status", required = false)
     private CustomerStatus customerStatus;
 
-    @DateOfBirth
+    @NotBlank(message = "DOB can't be blank", groups = {OnCreate.class})
+    @DateOfBirth(groups = {OnCreate.class, OnUpdate.class})
     @JsonProperty(value="dateOfBirth", required = true,access = JsonProperty.Access.WRITE_ONLY)
     @JsonDeserialize(using = DateFormatUtils.class)
     @JsonFormat(shape =  JsonFormat.Shape.STRING, pattern = CustomerConstants.DOB_PATTERN)

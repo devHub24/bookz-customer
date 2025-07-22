@@ -18,13 +18,14 @@ public class PhoneNumberValidator implements CustomerValidator {
     public RuleResult validate() {
         StringBuilder message = new StringBuilder();
         RuleResult ruleResult = new RuleResult();
-
-        for(PhoneRule rule : this.rules){
-            if(!rule.validate(this.phoneNumber)){
+    if(this.phoneNumber == null ) {
+        for (PhoneRule rule : this.rules) {
+            if (!rule.validate(this.phoneNumber)) {
                 ruleResult.setValid(false);
-                message.append(rule.getErrorMessage()).append(", ");
+             message.append(rule.getErrorMessage()).append(", ");
             }
         }
+    }
         ruleResult.setMessage(message.toString());
         return ruleResult;
     }

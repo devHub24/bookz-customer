@@ -24,10 +24,12 @@ public class BirthDateValidator implements CustomerValidator{
     public RuleResult validate() {
         RuleResult ruleResult = new RuleResult();
         StringBuilder messages = new StringBuilder();
-        for(DateRule dateRule : this.dateRules){
-            if(!dateRule.validate(this.birthDate)){
-                ruleResult.setValid(false);
-                messages.append(dateRule.getErrorMessage()).append(", ");
+        if (this.birthDate != null) {
+            for (DateRule dateRule : this.dateRules) {
+                if (!dateRule.validate(this.birthDate)) {
+                    ruleResult.setValid(false);
+                    messages.append(dateRule.getErrorMessage()).append(", ");
+                }
             }
         }
         ruleResult.setMessage(messages.toString());

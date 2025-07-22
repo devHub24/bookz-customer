@@ -3,6 +3,7 @@ package com.sk.bookz_customer.service;
 import com.sk.bookz_customer.constants.CustomerStatus;
 import com.sk.bookz_customer.dto.CustomerDto;
 import com.sk.bookz_customer.entity.Customer;
+import com.sk.bookz_customer.exception.CustomerNotFoundException;
 import com.sk.bookz_customer.mapper.CustomerMapper;
 import com.sk.bookz_customer.repo.ICustomerRepo;
 import io.micrometer.core.instrument.DistributionSummary;
@@ -16,6 +17,7 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Optional;
 import java.util.stream.Collectors;
 
 @Service
@@ -61,6 +63,14 @@ public class CustomerServiceImp implements ICustomerService {
                 .stream()
                 .map(CustomerMapper::toCustomerDto)
                 .collect(Collectors.toList());
+    }
+
+    @Override
+    public CustomerDto updateCustomer(Long id, CustomerDto customerDto) {
+        Customer customer = customerRepo.findById(id).orElseThrow(
+                ()->new CustomerNotFoundException("Customer not found with id:"+id));
+        return CustomerMapper.toCustomerDto(customerRepo.save(
+                CustomerMapper.updateCustomerMapper(customerDto, customer)));
     }
 
 
