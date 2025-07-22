@@ -21,7 +21,7 @@ public class PhoneNumberConstraint implements ConstraintValidator<PhoneNumber, S
         );
 
         CustomerValidator phoneNumberValidator = new PhoneNumberValidator(s,rules);
-        RuleResult result = phoneNumberValidator.validate();
+        RuleResult result = !s.isEmpty()?phoneNumberValidator.validate(): new RuleResult();
         if(!result.isValid()){
             constraintValidatorContext.disableDefaultConstraintViolation();
             constraintValidatorContext.buildConstraintViolationWithTemplate(result.getMessage()).addConstraintViolation();

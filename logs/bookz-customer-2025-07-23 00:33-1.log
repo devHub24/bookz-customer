@@ -1,0 +1,11 @@
+2025-07-23 00:27:00.771 [INFO ] [nio-8282-exec-2] [c.s.b.u.DateFormatUtils                 ] : dateString:1999-11-16 and the format: Value(MonthOfYear,2)'-'Value(DayOfMonth,2)'-'Value(YearOfEra,4,19,EXCEEDS_PAD)
+2025-07-23 00:27:00.774 [ERROR] [nio-8282-exec-2] [c.s.b.u.DateFormatUtils                 ] : Exception while parsing the date: Text '1999-11-16' could not be parsed at index 2
+2025-07-23 00:27:00.774 [INFO ] [nio-8282-exec-2] [c.s.b.u.DateFormatUtils                 ] : dateString:1999-11-16 and the format: Value(DayOfMonth,2)'-'Value(MonthOfYear,2)'-'Value(YearOfEra,4,19,EXCEEDS_PAD)
+2025-07-23 00:27:00.774 [ERROR] [nio-8282-exec-2] [c.s.b.u.DateFormatUtils                 ] : Exception while parsing the date: Text '1999-11-16' could not be parsed at index 2
+2025-07-23 00:27:00.774 [INFO ] [nio-8282-exec-2] [c.s.b.u.DateFormatUtils                 ] : dateString:1999-11-16 and the format: Value(YearOfEra,4,19,EXCEEDS_PAD)'-'Value(MonthOfYear,2)'-'Value(DayOfMonth,2)
+2025-07-23 00:27:00.872 [INFO ] [nio-8282-exec-2] [c.s.b.m.CustomerMapper                  ] : Converted customerDto: Customer(id=null, name=user11, email=user11@gmail.com, password=$2a$10$OfeZ6qGK3366nfLLpGY6K.15WEkunACKLjWCOPCd820WmPT3n6u5a, number=1101101100, dateOfBirth=1999-11-16, customerStatus=SUBSCRIBED)
+2025-07-23 00:27:00.931 [INFO ] [nio-8282-exec-2] [c.s.b.s.CustomerServiceImp              ] : New customer saved successfully:Customer(id=48, name=user11, email=user11@gmail.com, password=$2a$10$OfeZ6qGK3366nfLLpGY6K.15WEkunACKLjWCOPCd820WmPT3n6u5a, number=1101101100, dateOfBirth=1999-11-16, customerStatus=SUBSCRIBED)
+2025-07-23 00:27:00.931 [INFO ] [nio-8282-exec-2] [c.s.b.m.CustomerMapper                  ] : Converted customerDto: CustomerDto(id=48, name=user11, email=user11@gmail.com, password=$2a$10$OfeZ6qGK3366nfLLpGY6K.15WEkunACKLjWCOPCd820WmPT3n6u5a, number=1101101100, customerStatus=SUBSCRIBED, dateOfBirth=1999-11-16)
+2025-07-23 00:27:17.532 [INFO ] [ionShutdownHook] [j.LocalContainerEntityManagerFactoryBean] : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-07-23 00:27:17.535 [INFO ] [ionShutdownHook] [c.z.h.HikariDataSource                  ] : HikariPool-1 - Shutdown initiated...
+2025-07-23 00:27:17.540 [INFO ] [ionShutdownHook] [c.z.h.HikariDataSource                  ] : HikariPool-1 - Shutdown completed.

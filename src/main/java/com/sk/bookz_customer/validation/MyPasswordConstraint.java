@@ -36,7 +36,7 @@ public class MyPasswordConstraint implements ConstraintValidator<Password, Strin
 
 
         CustomerValidator passwordValidator = new CustomPasswordValidator(s, passwordRules);
-        RuleResult ruleResult = passwordValidator.validate();
+        RuleResult ruleResult = !s.isEmpty()? passwordValidator.validate(): new RuleResult();
 
         if(!ruleResult.isValid()){
             constraintValidatorContext.disableDefaultConstraintViolation();

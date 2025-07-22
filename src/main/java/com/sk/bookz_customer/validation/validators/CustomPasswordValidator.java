@@ -22,15 +22,13 @@ public class CustomPasswordValidator implements CustomerValidator {
 
         RuleResult ruleResult = new RuleResult();
         StringBuilder messages = new StringBuilder();
-        if(this.password != null && !this.password.isEmpty()) {
+
             for (PasswordRule passwordRule : this.passwordRules) {
                 if (!passwordRule.validate(this.password)) {
                     ruleResult.setValid(false);
                     messages.append(passwordRule.getErrorMessage()).append(", ");
                 }
             }
-        }
-
         ruleResult.setMessage(messages.toString());
         return ruleResult;
     }

@@ -8,6 +8,7 @@ import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import com.sk.bookz_customer.annotations.DateOfBirth;
 import com.sk.bookz_customer.annotations.Password;
 import com.sk.bookz_customer.annotations.PhoneNumber;
+import com.sk.bookz_customer.annotations.Status;
 import com.sk.bookz_customer.annotations.markers.OnCreate;
 import com.sk.bookz_customer.annotations.markers.OnUpdate;
 import com.sk.bookz_customer.constants.CustomerConstants;
@@ -53,6 +54,7 @@ public class CustomerDto {
     private String number;
 
     @JsonProperty(value = "status", required = false)
+    @Status(groups = {OnCreate.class, OnUpdate.class})
     private CustomerStatus customerStatus;
 
     @DateOfBirth(groups = {OnCreate.class, OnUpdate.class})

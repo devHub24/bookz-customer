@@ -17,7 +17,7 @@ public class BirthDateConstraint implements ConstraintValidator<DateOfBirth, Loc
     public boolean isValid(LocalDate localDate, ConstraintValidatorContext constraintValidatorContext) {
         List<DateRule> dateRules = List.of(new BirthDateRule());
         CustomerValidator validator = new BirthDateValidator(localDate,dateRules);
-        RuleResult ruleResult = validator.validate();
+        RuleResult ruleResult = localDate!=null? validator.validate(): new RuleResult();
         if(!ruleResult.isValid()){
             constraintValidatorContext.disableDefaultConstraintViolation();
             constraintValidatorContext.buildConstraintViolationWithTemplate(ruleResult.getMessage()).addConstraintViolation();
