@@ -3,6 +3,7 @@ package com.sk.bookz_customer.service;
 import com.sk.bookz_customer.constants.CustomerStatus;
 import com.sk.bookz_customer.dto.CustomerDto;
 import com.sk.bookz_customer.entity.Customer;
+import com.sk.bookz_customer.exception.CustomerAlreadyExistsException;
 import com.sk.bookz_customer.exception.CustomerNotFoundException;
 import com.sk.bookz_customer.mapper.CustomerMapper;
 import com.sk.bookz_customer.repo.ICustomerRepo;
@@ -13,6 +14,7 @@ import lombok.SneakyThrows;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 
@@ -43,9 +45,13 @@ public class CustomerServiceImp implements ICustomerService {
     public CustomerDto newCustomer(CustomerDto customerDto) {
         customerDto.setPassword(encryptPassword(customerDto.getPassword()));
         if(customerDto.getCustomerStatus()==null) customerDto.setCustomerStatus(CustomerStatus.ACTIVE);
-        Customer savedCustomer = customerTimer.recordCallable(()->customerRepo.save(CustomerMapper.toCustomer(customerDto)));
-        LOGGER.info("New customer saved successfully:{}", savedCustomer);
-        return CustomerMapper.toCustomerDto(savedCustomer);
+        try{
+            Customer savedCustomer = customerRepo.save(CustomerMapper.toCustomer(customerDto));
+            LOGGER.info("New customer saved successfully:{}", savedCustomer);
+            return CustomerMapper.toCustomerDto(savedCustomer);
+        }catch(DataIntegrityViolationException ex){
+            throw new CustomerAlreadyExistsException("Customer Already Exists with mail id: "+customerDto.getEmail());
+        }
     }
 
     private String encryptPassword(String password) {
