@@ -12,6 +12,9 @@ import java.time.LocalDate;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
+@Table(indexes = {@Index(name = "idx_email", columnList = "email"),
+        @Index(name="idx_number", columnList = "number")}
+)
 public class Customer {
 
     @Id
