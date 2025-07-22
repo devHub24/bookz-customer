@@ -9,6 +9,32 @@ spring:
     username: root
     password: root
 
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+        #changed default base url
+      base-path: /monitor
+      #changed port for the management
+  server:
+    port: 8181
+  #getting health endpoint in detail
+  endpoint:
+    health:
+      show-details: always
+    #making info custom variable available
+    info:
+      env:
+        enabled: true
+  #ignored since beans is enabled by default
+  #  endpoint:
+  #    beans:
+  #      access: read_only
+
+  info:
+    app:
+      name: Bookz-Customer
   jpa:
     show-sql: true
     properties:
