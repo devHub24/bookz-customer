@@ -17,8 +17,8 @@ management:
         #changed default base url
       base-path: /monitor
       #changed port for the management
-  server:
-    port: 8181
+#  server:
+#    port: 8181
   #getting health endpoint in detail
   endpoint:
     health:
