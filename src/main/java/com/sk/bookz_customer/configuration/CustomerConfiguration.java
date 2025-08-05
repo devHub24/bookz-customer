@@ -12,10 +12,6 @@ import java.util.Set;
 @Configuration
 public class CustomerConfiguration {
 
-    @Bean
-    public BCryptPasswordEncoder bCryptPasswordEncoder() {
-        return new BCryptPasswordEncoder();
-    }
 
     @Bean(name="releaseNotes")
     public List<ReleaseNotes> releaseNotes(){

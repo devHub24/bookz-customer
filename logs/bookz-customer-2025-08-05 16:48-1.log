@@ -1,0 +1,201 @@
+2025-08-05 16:42:18.962 [INFO ] [kground-preinit] [o.h.v.i.u.Version                       ] : HV000001: Hibernate Validator 8.0.2.Final
+2025-08-05 16:42:18.986 [INFO ] [           main] [c.s.b.BookzCustomerApplication          ] : Starting BookzCustomerApplication using Java 17.0.15 with PID 102016 (/home/santhosh/foundation/myProjs/bookz/bookz-customer/target/classes started by santhosh in /home/santhosh/foundation/myProjs/bookz/bookz-customer)
+2025-08-05 16:42:18.988 [DEBUG] [           main] [c.s.b.BookzCustomerApplication          ] : Running with Spring Boot v3.5.3, Spring v6.2.8
+2025-08-05 16:42:18.989 [INFO ] [           main] [c.s.b.BookzCustomerApplication          ] : No active profile set, falling back to 1 default profile: "default"
+2025-08-05 16:42:19.569 [INFO ] [           main] [.s.d.r.c.RepositoryConfigurationDelegate] : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-05 16:42:19.602 [INFO ] [           main] [.s.d.r.c.RepositoryConfigurationDelegate] : Finished Spring Data repository scanning in 27 ms. Found 1 JPA repository interface.
+2025-08-05 16:42:19.930 [INFO ] [           main] [o.a.c.h.Http11NioProtocol               ] : Initializing ProtocolHandler ["http-nio-8282"]
+2025-08-05 16:42:19.931 [INFO ] [           main] [o.a.c.c.StandardService                 ] : Starting service [Tomcat]
+2025-08-05 16:42:19.931 [INFO ] [           main] [o.a.c.c.StandardEngine                  ] : Starting Servlet engine: [Apache Tomcat/10.1.42]
+2025-08-05 16:42:19.958 [INFO ] [           main] [o.a.c.c.C.[.[.[/]                       ] : Initializing Spring embedded WebApplicationContext
+2025-08-05 16:42:20.090 [INFO ] [           main] [c.z.h.HikariDataSource                  ] : HikariPool-1 - Starting...
+2025-08-05 16:42:20.183 [INFO ] [           main] [c.z.h.p.HikariPool                      ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@46a388cc
+2025-08-05 16:42:20.185 [INFO ] [           main] [c.z.h.HikariDataSource                  ] : HikariPool-1 - Start completed.
+2025-08-05 16:42:20.206 [INFO ] [           main] [o.h.j.i.u.LogHelper                     ] : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-05 16:42:20.234 [INFO ] [           main] [o.h.Version                             ] : HHH000412: Hibernate ORM core version 6.6.18.Final
+2025-08-05 16:42:20.253 [INFO ] [           main] [o.h.c.i.RegionFactoryInitiator          ] : HHH000026: Second-level cache disabled
+2025-08-05 16:42:20.429 [INFO ] [           main] [o.s.o.j.p.SpringPersistenceUnitInfo     ] : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-05 16:42:20.490 [INFO ] [           main] [o.h.o.c.pooling                         ] : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.5
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-05 16:42:20.972 [INFO ] [           main] [o.h.e.t.j.p.i.JtaPlatformInitiator      ] : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-05 16:42:20.974 [INFO ] [           main] [j.LocalContainerEntityManagerFactoryBean] : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-05 16:42:21.122 [INFO ] [           main] [eAuthenticationProviderManagerConfigurer] : Global AuthenticationManager configured with AuthenticationProvider bean with name customAuthProvider
+2025-08-05 16:42:21.123 [WARN ] [           main] [r$InitializeUserDetailsManagerConfigurer] : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2025-08-05 16:42:21.149 [DEBUG] [           main] [c.s.b.s.f.RequestValidationFilter       ] : Filter 'validationFilter' configured for use
+2025-08-05 16:42:21.150 [DEBUG] [           main] [c.s.b.s.f.AuthenticationLoggingFilter   ] : Filter 'loggingFilter' configured for use
+2025-08-05 16:42:21.150 [DEBUG] [           main] [c.s.b.s.f.StaticKeyAuthenticationFilter ] : Filter 'keyFilter' configured for use
+2025-08-05 16:42:21.614 [INFO ] [           main] [o.a.c.h.Http11NioProtocol               ] : Starting ProtocolHandler ["http-nio-8282"]
+2025-08-05 16:42:21.636 [INFO ] [           main] [c.s.b.BookzCustomerApplication          ] : Started BookzCustomerApplication in 2.952 seconds (process running for 3.437)
+2025-08-05 16:42:21.890 [INFO ] [on(2)-127.0.0.1] [o.a.c.c.C.[.[.[/]                       ] : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-05 16:42:21.891 [INFO ] [on(2)-127.0.0.1] [o.s.w.s.DispatcherServlet               ] : Initializing Servlet 'dispatcherServlet'
+2025-08-05 16:42:21.892 [INFO ] [on(2)-127.0.0.1] [o.s.w.s.DispatcherServlet               ] : Completed initialization in 1 ms
+2025-08-05 16:42:49.384 [INFO ] [ionShutdownHook] [j.LocalContainerEntityManagerFactoryBean] : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-05 16:42:49.386 [INFO ] [ionShutdownHook] [c.z.h.HikariDataSource                  ] : HikariPool-1 - Shutdown initiated...
+2025-08-05 16:42:49.389 [INFO ] [ionShutdownHook] [c.z.h.HikariDataSource                  ] : HikariPool-1 - Shutdown completed.
+2025-08-05 16:42:51.949 [INFO ] [kground-preinit] [o.h.v.i.u.Version                       ] : HV000001: Hibernate Validator 8.0.2.Final
+2025-08-05 16:42:51.974 [INFO ] [           main] [c.s.b.BookzCustomerApplication          ] : Starting BookzCustomerApplication using Java 17.0.15 with PID 102473 (/home/santhosh/foundation/myProjs/bookz/bookz-customer/target/classes started by santhosh in /home/santhosh/foundation/myProjs/bookz/bookz-customer)
+2025-08-05 16:42:51.976 [DEBUG] [           main] [c.s.b.BookzCustomerApplication          ] : Running with Spring Boot v3.5.3, Spring v6.2.8
+2025-08-05 16:42:51.977 [INFO ] [           main] [c.s.b.BookzCustomerApplication          ] : No active profile set, falling back to 1 default profile: "default"
+2025-08-05 16:42:52.548 [INFO ] [           main] [.s.d.r.c.RepositoryConfigurationDelegate] : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-05 16:42:52.582 [INFO ] [           main] [.s.d.r.c.RepositoryConfigurationDelegate] : Finished Spring Data repository scanning in 28 ms. Found 1 JPA repository interface.
+2025-08-05 16:42:52.871 [INFO ] [           main] [o.a.c.h.Http11NioProtocol               ] : Initializing ProtocolHandler ["http-nio-8282"]
+2025-08-05 16:42:52.873 [INFO ] [           main] [o.a.c.c.StandardService                 ] : Starting service [Tomcat]
+2025-08-05 16:42:52.873 [INFO ] [           main] [o.a.c.c.StandardEngine                  ] : Starting Servlet engine: [Apache Tomcat/10.1.42]
+2025-08-05 16:42:52.897 [INFO ] [           main] [o.a.c.c.C.[.[.[/]                       ] : Initializing Spring embedded WebApplicationContext
+2025-08-05 16:42:53.022 [INFO ] [           main] [c.z.h.HikariDataSource                  ] : HikariPool-1 - Starting...
+2025-08-05 16:42:53.106 [INFO ] [           main] [c.z.h.p.HikariPool                      ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@596afb2f
+2025-08-05 16:42:53.107 [INFO ] [           main] [c.z.h.HikariDataSource                  ] : HikariPool-1 - Start completed.
+2025-08-05 16:42:53.128 [INFO ] [           main] [o.h.j.i.u.LogHelper                     ] : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-05 16:42:53.155 [INFO ] [           main] [o.h.Version                             ] : HHH000412: Hibernate ORM core version 6.6.18.Final
+2025-08-05 16:42:53.173 [INFO ] [           main] [o.h.c.i.RegionFactoryInitiator          ] : HHH000026: Second-level cache disabled
+2025-08-05 16:42:53.338 [INFO ] [           main] [o.s.o.j.p.SpringPersistenceUnitInfo     ] : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-05 16:42:53.394 [INFO ] [           main] [o.h.o.c.pooling                         ] : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.5
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-05 16:42:53.890 [INFO ] [           main] [o.h.e.t.j.p.i.JtaPlatformInitiator      ] : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-05 16:42:53.892 [INFO ] [           main] [j.LocalContainerEntityManagerFactoryBean] : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-05 16:42:54.043 [INFO ] [           main] [eAuthenticationProviderManagerConfigurer] : Global AuthenticationManager configured with AuthenticationProvider bean with name customAuthProvider
+2025-08-05 16:42:54.043 [WARN ] [           main] [r$InitializeUserDetailsManagerConfigurer] : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2025-08-05 16:42:54.067 [DEBUG] [           main] [c.s.b.s.f.RequestValidationFilter       ] : Filter 'validationFilter' configured for use
+2025-08-05 16:42:54.068 [DEBUG] [           main] [c.s.b.s.f.AuthenticationLoggingFilter   ] : Filter 'loggingFilter' configured for use
+2025-08-05 16:42:54.068 [DEBUG] [           main] [c.s.b.s.f.StaticKeyAuthenticationFilter ] : Filter 'keyFilter' configured for use
+2025-08-05 16:42:54.526 [INFO ] [           main] [o.a.c.h.Http11NioProtocol               ] : Starting ProtocolHandler ["http-nio-8282"]
+2025-08-05 16:42:54.545 [INFO ] [           main] [c.s.b.BookzCustomerApplication          ] : Started BookzCustomerApplication in 2.876 seconds (process running for 3.375)
+2025-08-05 16:42:54.842 [INFO ] [on(2)-127.0.0.1] [o.a.c.c.C.[.[.[/]                       ] : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-05 16:42:54.843 [INFO ] [on(2)-127.0.0.1] [o.s.w.s.DispatcherServlet               ] : Initializing Servlet 'dispatcherServlet'
+2025-08-05 16:42:54.845 [INFO ] [on(2)-127.0.0.1] [o.s.w.s.DispatcherServlet               ] : Completed initialization in 2 ms
+2025-08-05 16:44:40.028 [INFO ] [ionShutdownHook] [j.LocalContainerEntityManagerFactoryBean] : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-05 16:44:40.030 [INFO ] [ionShutdownHook] [c.z.h.HikariDataSource                  ] : HikariPool-1 - Shutdown initiated...
+2025-08-05 16:44:40.032 [INFO ] [ionShutdownHook] [c.z.h.HikariDataSource                  ] : HikariPool-1 - Shutdown completed.
+2025-08-05 16:45:28.804 [INFO ] [kground-preinit] [o.h.v.i.u.Version                       ] : HV000001: Hibernate Validator 8.0.2.Final
+2025-08-05 16:45:28.828 [INFO ] [           main] [c.s.b.BookzCustomerApplication          ] : Starting BookzCustomerApplication using Java 17.0.15 with PID 103401 (/home/santhosh/foundation/myProjs/bookz/bookz-customer/target/classes started by santhosh in /home/santhosh/foundation/myProjs/bookz/bookz-customer)
+2025-08-05 16:45:28.830 [DEBUG] [           main] [c.s.b.BookzCustomerApplication          ] : Running with Spring Boot v3.5.3, Spring v6.2.8
+2025-08-05 16:45:28.831 [INFO ] [           main] [c.s.b.BookzCustomerApplication          ] : No active profile set, falling back to 1 default profile: "default"
+2025-08-05 16:45:29.396 [INFO ] [           main] [.s.d.r.c.RepositoryConfigurationDelegate] : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-05 16:45:29.431 [INFO ] [           main] [.s.d.r.c.RepositoryConfigurationDelegate] : Finished Spring Data repository scanning in 29 ms. Found 1 JPA repository interface.
+2025-08-05 16:45:29.737 [INFO ] [           main] [o.a.c.h.Http11NioProtocol               ] : Initializing ProtocolHandler ["http-nio-8282"]
+2025-08-05 16:45:29.738 [INFO ] [           main] [o.a.c.c.StandardService                 ] : Starting service [Tomcat]
+2025-08-05 16:45:29.739 [INFO ] [           main] [o.a.c.c.StandardEngine                  ] : Starting Servlet engine: [Apache Tomcat/10.1.42]
+2025-08-05 16:45:29.763 [INFO ] [           main] [o.a.c.c.C.[.[.[/]                       ] : Initializing Spring embedded WebApplicationContext
+2025-08-05 16:45:29.891 [INFO ] [           main] [c.z.h.HikariDataSource                  ] : HikariPool-1 - Starting...
+2025-08-05 16:45:29.975 [INFO ] [           main] [c.z.h.p.HikariPool                      ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@3386ed8
+2025-08-05 16:45:29.977 [INFO ] [           main] [c.z.h.HikariDataSource                  ] : HikariPool-1 - Start completed.
+2025-08-05 16:45:30.000 [INFO ] [           main] [o.h.j.i.u.LogHelper                     ] : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-05 16:45:30.027 [INFO ] [           main] [o.h.Version                             ] : HHH000412: Hibernate ORM core version 6.6.18.Final
+2025-08-05 16:45:30.046 [INFO ] [           main] [o.h.c.i.RegionFactoryInitiator          ] : HHH000026: Second-level cache disabled
+2025-08-05 16:45:30.225 [INFO ] [           main] [o.s.o.j.p.SpringPersistenceUnitInfo     ] : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-05 16:45:30.290 [INFO ] [           main] [o.h.o.c.pooling                         ] : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.5
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-05 16:45:30.823 [INFO ] [           main] [o.h.e.t.j.p.i.JtaPlatformInitiator      ] : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-05 16:45:30.825 [INFO ] [           main] [j.LocalContainerEntityManagerFactoryBean] : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-05 16:45:30.974 [INFO ] [           main] [eAuthenticationProviderManagerConfigurer] : Global AuthenticationManager configured with AuthenticationProvider bean with name customAuthProvider
+2025-08-05 16:45:30.975 [WARN ] [           main] [r$InitializeUserDetailsManagerConfigurer] : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2025-08-05 16:45:30.998 [DEBUG] [           main] [c.s.b.s.f.RequestValidationFilter       ] : Filter 'validationFilter' configured for use
+2025-08-05 16:45:30.999 [DEBUG] [           main] [c.s.b.s.f.AuthenticationLoggingFilter   ] : Filter 'loggingFilter' configured for use
+2025-08-05 16:45:30.999 [DEBUG] [           main] [c.s.b.s.f.StaticKeyAuthenticationFilter ] : Filter 'keyFilter' configured for use
+2025-08-05 16:45:31.474 [INFO ] [           main] [o.a.c.h.Http11NioProtocol               ] : Starting ProtocolHandler ["http-nio-8282"]
+2025-08-05 16:45:31.493 [INFO ] [           main] [c.s.b.BookzCustomerApplication          ] : Started BookzCustomerApplication in 2.946 seconds (process running for 3.401)
+2025-08-05 16:45:31.820 [INFO ] [on(3)-127.0.0.1] [o.a.c.c.C.[.[.[/]                       ] : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-05 16:45:31.821 [INFO ] [on(3)-127.0.0.1] [o.s.w.s.DispatcherServlet               ] : Initializing Servlet 'dispatcherServlet'
+2025-08-05 16:45:31.823 [INFO ] [on(3)-127.0.0.1] [o.s.w.s.DispatcherServlet               ] : Completed initialization in 1 ms
+2025-08-05 16:46:30.662 [INFO ] [ionShutdownHook] [j.LocalContainerEntityManagerFactoryBean] : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-05 16:46:30.664 [INFO ] [ionShutdownHook] [c.z.h.HikariDataSource                  ] : HikariPool-1 - Shutdown initiated...
+2025-08-05 16:46:30.667 [INFO ] [ionShutdownHook] [c.z.h.HikariDataSource                  ] : HikariPool-1 - Shutdown completed.
+2025-08-05 16:46:32.706 [INFO ] [kground-preinit] [o.h.v.i.u.Version                       ] : HV000001: Hibernate Validator 8.0.2.Final
+2025-08-05 16:46:32.737 [INFO ] [           main] [c.s.b.BookzCustomerApplication          ] : Starting BookzCustomerApplication using Java 17.0.15 with PID 103859 (/home/santhosh/foundation/myProjs/bookz/bookz-customer/target/classes started by santhosh in /home/santhosh/foundation/myProjs/bookz/bookz-customer)
+2025-08-05 16:46:32.739 [DEBUG] [           main] [c.s.b.BookzCustomerApplication          ] : Running with Spring Boot v3.5.3, Spring v6.2.8
+2025-08-05 16:46:32.740 [INFO ] [           main] [c.s.b.BookzCustomerApplication          ] : No active profile set, falling back to 1 default profile: "default"
+2025-08-05 16:46:33.369 [INFO ] [           main] [.s.d.r.c.RepositoryConfigurationDelegate] : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-05 16:46:33.409 [INFO ] [           main] [.s.d.r.c.RepositoryConfigurationDelegate] : Finished Spring Data repository scanning in 34 ms. Found 1 JPA repository interface.
+2025-08-05 16:46:33.743 [INFO ] [           main] [o.a.c.h.Http11NioProtocol               ] : Initializing ProtocolHandler ["http-nio-8282"]
+2025-08-05 16:46:33.744 [INFO ] [           main] [o.a.c.c.StandardService                 ] : Starting service [Tomcat]
+2025-08-05 16:46:33.745 [INFO ] [           main] [o.a.c.c.StandardEngine                  ] : Starting Servlet engine: [Apache Tomcat/10.1.42]
+2025-08-05 16:46:33.781 [INFO ] [           main] [o.a.c.c.C.[.[.[/]                       ] : Initializing Spring embedded WebApplicationContext
+2025-08-05 16:46:34.007 [INFO ] [           main] [c.z.h.HikariDataSource                  ] : HikariPool-1 - Starting...
+2025-08-05 16:46:34.207 [INFO ] [           main] [c.z.h.p.HikariPool                      ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@45bf93bb
+2025-08-05 16:46:34.211 [INFO ] [           main] [c.z.h.HikariDataSource                  ] : HikariPool-1 - Start completed.
+2025-08-05 16:46:34.248 [INFO ] [           main] [o.h.j.i.u.LogHelper                     ] : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-05 16:46:34.304 [INFO ] [           main] [o.h.Version                             ] : HHH000412: Hibernate ORM core version 6.6.18.Final
+2025-08-05 16:46:34.344 [INFO ] [           main] [o.h.c.i.RegionFactoryInitiator          ] : HHH000026: Second-level cache disabled
+2025-08-05 16:46:34.712 [INFO ] [           main] [o.s.o.j.p.SpringPersistenceUnitInfo     ] : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-05 16:46:34.820 [INFO ] [           main] [o.h.o.c.pooling                         ] : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.5
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-05 16:46:35.859 [INFO ] [           main] [o.h.e.t.j.p.i.JtaPlatformInitiator      ] : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-05 16:46:35.865 [INFO ] [           main] [j.LocalContainerEntityManagerFactoryBean] : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-05 16:46:36.320 [INFO ] [           main] [eAuthenticationProviderManagerConfigurer] : Global AuthenticationManager configured with AuthenticationProvider bean with name customAuthProvider
+2025-08-05 16:46:36.321 [WARN ] [           main] [r$InitializeUserDetailsManagerConfigurer] : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2025-08-05 16:46:36.368 [DEBUG] [           main] [c.s.b.s.f.RequestValidationFilter       ] : Filter 'validationFilter' configured for use
+2025-08-05 16:46:36.369 [DEBUG] [           main] [c.s.b.s.f.AuthenticationLoggingFilter   ] : Filter 'loggingFilter' configured for use
+2025-08-05 16:46:36.369 [DEBUG] [           main] [c.s.b.s.f.StaticKeyAuthenticationFilter ] : Filter 'keyFilter' configured for use
+2025-08-05 16:46:37.273 [INFO ] [           main] [o.a.c.h.Http11NioProtocol               ] : Starting ProtocolHandler ["http-nio-8282"]
+2025-08-05 16:46:37.307 [INFO ] [           main] [c.s.b.BookzCustomerApplication          ] : Started BookzCustomerApplication in 4.972 seconds (process running for 5.833)
+2025-08-05 16:46:37.720 [INFO ] [on(3)-127.0.0.1] [o.a.c.c.C.[.[.[/]                       ] : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-05 16:46:37.720 [INFO ] [on(3)-127.0.0.1] [o.s.w.s.DispatcherServlet               ] : Initializing Servlet 'dispatcherServlet'
+2025-08-05 16:46:37.722 [INFO ] [on(3)-127.0.0.1] [o.s.w.s.DispatcherServlet               ] : Completed initialization in 1 ms
+2025-08-05 16:47:21.954 [WARN ] [l-1:housekeeper] [c.z.h.p.HikariPool                      ] : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=47s641ms902µs235ns).
+2025-08-05 16:47:22.055 [INFO ] [ionShutdownHook] [j.LocalContainerEntityManagerFactoryBean] : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-05 16:47:22.057 [INFO ] [ionShutdownHook] [c.z.h.HikariDataSource                  ] : HikariPool-1 - Shutdown initiated...
+2025-08-05 16:47:22.060 [INFO ] [ionShutdownHook] [c.z.h.HikariDataSource                  ] : HikariPool-1 - Shutdown completed.
+2025-08-05 16:47:24.059 [INFO ] [kground-preinit] [o.h.v.i.u.Version                       ] : HV000001: Hibernate Validator 8.0.2.Final
+2025-08-05 16:47:24.092 [INFO ] [           main] [c.s.b.BookzCustomerApplication          ] : Starting BookzCustomerApplication using Java 17.0.15 with PID 104279 (/home/santhosh/foundation/myProjs/bookz/bookz-customer/target/classes started by santhosh in /home/santhosh/foundation/myProjs/bookz/bookz-customer)
+2025-08-05 16:47:24.094 [DEBUG] [           main] [c.s.b.BookzCustomerApplication          ] : Running with Spring Boot v3.5.3, Spring v6.2.8
+2025-08-05 16:47:24.095 [INFO ] [           main] [c.s.b.BookzCustomerApplication          ] : No active profile set, falling back to 1 default profile: "default"
+2025-08-05 16:47:24.750 [INFO ] [           main] [.s.d.r.c.RepositoryConfigurationDelegate] : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-05 16:47:24.796 [INFO ] [           main] [.s.d.r.c.RepositoryConfigurationDelegate] : Finished Spring Data repository scanning in 35 ms. Found 1 JPA repository interface.
+2025-08-05 16:47:25.136 [INFO ] [           main] [o.a.c.h.Http11NioProtocol               ] : Initializing ProtocolHandler ["http-nio-8282"]
+2025-08-05 16:47:25.137 [INFO ] [           main] [o.a.c.c.StandardService                 ] : Starting service [Tomcat]
+2025-08-05 16:47:25.138 [INFO ] [           main] [o.a.c.c.StandardEngine                  ] : Starting Servlet engine: [Apache Tomcat/10.1.42]
+2025-08-05 16:47:25.165 [INFO ] [           main] [o.a.c.c.C.[.[.[/]                       ] : Initializing Spring embedded WebApplicationContext
+2025-08-05 16:47:25.395 [INFO ] [           main] [c.z.h.HikariDataSource                  ] : HikariPool-1 - Starting...
+2025-08-05 16:47:25.563 [INFO ] [           main] [c.z.h.p.HikariPool                      ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@734cf881
+2025-08-05 16:47:25.566 [INFO ] [           main] [c.z.h.HikariDataSource                  ] : HikariPool-1 - Start completed.
+2025-08-05 16:47:25.601 [INFO ] [           main] [o.h.j.i.u.LogHelper                     ] : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-05 16:47:25.671 [INFO ] [           main] [o.h.Version                             ] : HHH000412: Hibernate ORM core version 6.6.18.Final
+2025-08-05 16:47:25.710 [INFO ] [           main] [o.h.c.i.RegionFactoryInitiator          ] : HHH000026: Second-level cache disabled
+2025-08-05 16:47:26.078 [INFO ] [           main] [o.s.o.j.p.SpringPersistenceUnitInfo     ] : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-05 16:47:26.193 [INFO ] [           main] [o.h.o.c.pooling                         ] : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.5
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-05 16:47:27.277 [INFO ] [           main] [o.h.e.t.j.p.i.JtaPlatformInitiator      ] : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-05 16:47:27.281 [INFO ] [           main] [j.LocalContainerEntityManagerFactoryBean] : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-05 16:47:27.618 [INFO ] [           main] [eAuthenticationProviderManagerConfigurer] : Global AuthenticationManager configured with AuthenticationProvider bean with name customAuthProvider
+2025-08-05 16:47:27.619 [WARN ] [           main] [r$InitializeUserDetailsManagerConfigurer] : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2025-08-05 16:47:27.678 [DEBUG] [           main] [c.s.b.s.f.RequestValidationFilter       ] : Filter 'validationFilter' configured for use
+2025-08-05 16:47:27.679 [DEBUG] [           main] [c.s.b.s.f.AuthenticationLoggingFilter   ] : Filter 'loggingFilter' configured for use
+2025-08-05 16:47:27.679 [DEBUG] [           main] [c.s.b.s.f.StaticKeyAuthenticationFilter ] : Filter 'keyFilter' configured for use
+2025-08-05 16:47:28.559 [INFO ] [           main] [o.a.c.h.Http11NioProtocol               ] : Starting ProtocolHandler ["http-nio-8282"]
+2025-08-05 16:47:28.590 [INFO ] [           main] [c.s.b.BookzCustomerApplication          ] : Started BookzCustomerApplication in 4.825 seconds (process running for 5.735)
+2025-08-05 16:47:29.136 [INFO ] [on(3)-127.0.0.1] [o.a.c.c.C.[.[.[/]                       ] : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-05 16:47:29.136 [INFO ] [on(3)-127.0.0.1] [o.s.w.s.DispatcherServlet               ] : Initializing Servlet 'dispatcherServlet'
+2025-08-05 16:47:29.138 [INFO ] [on(3)-127.0.0.1] [o.s.w.s.DispatcherServlet               ] : Completed initialization in 2 ms
+2025-08-05 16:48:10.615 [INFO ] [ionShutdownHook] [j.LocalContainerEntityManagerFactoryBean] : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-05 16:48:10.617 [INFO ] [ionShutdownHook] [c.z.h.HikariDataSource                  ] : HikariPool-1 - Shutdown initiated...
+2025-08-05 16:48:10.622 [INFO ] [ionShutdownHook] [c.z.h.HikariDataSource                  ] : HikariPool-1 - Shutdown completed.

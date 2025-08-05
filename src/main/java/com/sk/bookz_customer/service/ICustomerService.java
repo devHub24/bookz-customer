@@ -1,10 +1,11 @@
 package com.sk.bookz_customer.service;
 
 import com.sk.bookz_customer.dto.CustomerDto;
+import org.springframework.security.core.userdetails.UserDetailsService;
 
 import java.util.List;
 
-public interface ICustomerService {
+public interface ICustomerService extends UserDetailsService {
 
     public CustomerDto newCustomer(CustomerDto customerDto);
     public Long count();

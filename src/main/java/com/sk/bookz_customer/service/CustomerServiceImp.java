@@ -15,11 +15,16 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.DataIntegrityViolationException;
+import org.springframework.security.core.authority.SimpleGrantedAuthority;
+import org.springframework.security.core.userdetails.User;
+import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
+import java.util.Arrays;
 import java.util.List;
-import java.util.Optional;
 import java.util.stream.Collectors;
 
 @Service
@@ -28,14 +33,14 @@ public class CustomerServiceImp implements ICustomerService {
     private final Logger LOGGER = LoggerFactory.getLogger(CustomerServiceImp.class);
 
     private final ICustomerRepo customerRepo;
-    private final BCryptPasswordEncoder bCryptPasswordEncoder;
+    private final PasswordEncoder bCryptPasswordEncoder;
 
     @Autowired
     private Timer customerTimer;
     @Autowired
     private DistributionSummary distributionSummary;
 
-    public CustomerServiceImp(ICustomerRepo customerRepo, BCryptPasswordEncoder bCryptPasswordEncoder) {
+    public CustomerServiceImp(ICustomerRepo customerRepo, PasswordEncoder bCryptPasswordEncoder) {
         this.customerRepo = customerRepo;
         this.bCryptPasswordEncoder = bCryptPasswordEncoder;
     }
@@ -102,4 +107,13 @@ public class CustomerServiceImp implements ICustomerService {
     }
 
 
+    @Override
+    public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
+        Customer customer = customerRepo.findByEmail(username)
+                .orElseThrow(()-> new CustomerNotFoundException("Customer not found with mail: "+username));
+        return User.withUsername(username)
+                .password(customer.getPassword())
+                .authorities(Arrays.asList(new SimpleGrantedAuthority("ROLE_CUSTOMER")))
+                .build();
+    }
 }

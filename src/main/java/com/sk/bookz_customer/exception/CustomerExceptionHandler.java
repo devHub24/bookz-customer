@@ -9,6 +9,7 @@ import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.http.converter.HttpMessageNotReadableException;
+import org.springframework.security.authentication.BadCredentialsException;
 import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
@@ -60,6 +61,19 @@ public class CustomerExceptionHandler {
                             .code(HttpStatus.BAD_REQUEST.value())
                             .build()
             );
+    }
+
+    @ExceptionHandler(BadCredentialsException.class)
+    public ResponseEntity<ErrorDto> handleBadCredentialsException(BadCredentialsException ex, WebRequest request) {
+        LOGGER.error(ex.getMessage());
+        return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body(
+                ErrorDto.builder()
+                        .message(ex.getMessage())
+                        .code(HttpStatus.UNAUTHORIZED.value())
+                        .timestamp(LocalDateTime.now())
+                        .path(request.getDescription(false))
+                        .build()
+        );
     }
 
 

@@ -46,3 +46,6 @@ management:
 server:
   port: 8282
   shutdown: graceful
+
+authorization:
+  key: "pY3R4t9sZ7wT2xE9kB1mC4vU8rQ6yF2aH7jL0qK3wM5nD8rB2pS5xG1tL4yW9zV6"
